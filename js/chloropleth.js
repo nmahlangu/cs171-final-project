@@ -30,12 +30,12 @@ Chloropleth.prototype.initVis = function() {
     	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // make projection
-    // vis.projection = d3.geo.albers()
-    // 	.center([37.761655, -122.442760])
-    // 	.scale(10000)
-    // 	.translate([600000,11500]);
+    vis.projection = d3.geo.albers()
+    	.center([37.761655, -122.442760])
+    	.scale(10000)
+    	.translate([600000,11500]);
 
-    vis.projection = d3.geo.albers();
+    // vis.projection = d3.geo.albers();
 
     // make path
     vis.path = d3.geo.path()
@@ -54,25 +54,24 @@ Chloropleth.prototype.initVis = function() {
     // vis.svg.append("path")
     // 	.datum(topojson.feature(vis.boundaryData, vis.boundaryData.objects.collection).features);
 
- 	// /////////////////////// ATTEMPT #2 ////////////////////////////
- 	// // create map
- 	// // vis.map = L.map(vis.parentElement).setView([37.761655, -122.442760], 13);
- 	// vis.map = L.map(vis.parentElement).setView([37.761655, -122.442760], 13);
+ 	/////////////////////// ATTEMPT #2 ////////////////////////////
+ 	// create map
+ 	vis.map = L.map(vis.parentElement).setView([37.761655, -122.442760], 13);
 
- 	// // images
- 	// L.Icon.Default.imagePath = "img";
+ 	// images
+ 	L.Icon.Default.imagePath = "img";
 
-  //   // tile layer
-  //   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  //   	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
-  //   }).addTo(vis.map);
+    // tile layer
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
+    }).addTo(vis.map);
 
-  //   // geo-json data
-  //   vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
-  //     style: function(f) { return {color: "red"} },
-  //     weight: 3,
-  //     fillOpacity: 0.2
-  //   }).addTo(vis.map);
+    // geo-json data
+    vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
+      style: function(f) { return {color: "red"} },
+      weight: 3,
+      fillOpacity: 0.2
+    }).addTo(vis.map);
 
 }
 
