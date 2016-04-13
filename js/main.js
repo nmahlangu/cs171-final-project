@@ -1,6 +1,7 @@
 // data stores
 var restaurantData;
 var boundaryData;
+var geoBoundaryData;
 
 // variable for chloropleth instance
 var chloropleth;
@@ -26,8 +27,9 @@ var chloropleth;
 queue()
 	.defer(d3.json, "data/json/restaurant_data_formatted.json")
 	.defer(d3.json, "data/topojson/sf_neighborhoods.json")
+	.defer(d3.json, "data/geojson/sf_neighborhoods.geojson")
 
-	.await(function(error, _restaurantData, _boundaryData) {
+	.await(function(error, _restaurantData, _boundaryData, _geoBoundaryData) {
 		if (error) {
 			throw error;
 		}
@@ -38,8 +40,12 @@ queue()
 		console.log("boundaryData: ");
 		console.log(_boundaryData);
 
+		console.log("geoBoundaryData: ");
+		console.log(_geoBoundaryData);
+
 		restaurantData = _restaurantData;
 		boundaryData = _boundaryData;
+		geoBoundaryData = _geoBoundaryData;
 
 		createVis();
 	});
@@ -48,5 +54,5 @@ queue()
  * Function to instantiate the visualization
  */
 function createVis() {
-	chloropleth = new Chloropleth("chloropleth", restaurantData, boundaryData);
+	chloropleth = new Chloropleth("chloropleth", restaurantData, boundaryData, geoBoundaryData);
 }
