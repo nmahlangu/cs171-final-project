@@ -19,7 +19,7 @@ Chloropleth = function(_parentElement, _restaurantData, _boundaryData, _geoBound
 Chloropleth.prototype.initVis = function() {
 	var vis = this;
 
-	// // svg drawing area
+	// svg drawing area
 	var margin = {top: 40, right: 40, bottom: 40, left: 40};
 	var width  = 1300 - margin.left - margin.right;
 	var height = 700 - margin.top - margin.bottom;
@@ -29,32 +29,13 @@ Chloropleth.prototype.initVis = function() {
 		.append("g")
     	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    // make projection
-    vis.projection = d3.geo.albers()
-    	.center([37.761655, -122.442760])
-    	.scale(10000)
-    	.translate([600000,11500]);
+    // get all neighborhoods
+    // TODO: can probably delete this later
+    vis.neighborhoods = [];
+    vis.geoBoundaryData.features.forEach(function(d) {
+    	vis.neighborhoods.push(d.properties.name);
+    });
 
-    // vis.projection = d3.geo.albers();
-
-    // make path
-    vis.path = d3.geo.path()
-    	.projection(vis.projection);
-
-    vis.paths = vis.svg.selectAll("path")
-    	.data(topojson.feature(vis.boundaryData, vis.boundaryData.objects.collection).features);
-
-    vis.paths
-    	.enter()
-    	.append("path")
-    	.attr("d", vis.path)
-    	.style("fill", function(d) { return "red" });
-
-    // apply paths
-    // vis.svg.append("path")
-    // 	.datum(topojson.feature(vis.boundaryData, vis.boundaryData.objects.collection).features);
-
- 	/////////////////////// ATTEMPT #2 ////////////////////////////
  	// create map
  	vis.map = L.map(vis.parentElement).setView([37.761655, -122.442760], 13);
 
