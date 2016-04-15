@@ -4,11 +4,12 @@
  *  @param _restaurantData  -- Business, inspection, and violation data for all businesses
  *  @param _boundaryData    -- Topojson data for SF boundaries
  */
-Chloropleth = function(_parentElement, _restaurantData, _geoBoundaryData, _chloroplethData) {
+Chloropleth = function(_parentElement, _visCenter, _restaurantData, _geoBoundaryData, _chloroplethData) {
 	this.parentElement = _parentElement;
 	this.restaurantData = _restaurantData;
 	this.geoBoundaryData = _geoBoundaryData;
 	this.chloroplethData = _chloroplethData;
+	this.center = _visCenter;
 
 	this.initVis();
 }
@@ -20,22 +21,22 @@ Chloropleth.prototype.initVis = function() {
 	var vis = this;
 
 	// svg drawing area
-	var margin = {top: 40, right: 40, bottom: 40, left: 40};
-	var width  = 1300 - margin.left - margin.right;
-	var height = 700 - margin.top - margin.bottom;
-	vis.svg = d3.select("#" + vis.parentElement).append("svg")
-	    .attr("width", width + margin.left + margin.right)
-	    .attr("height", height + margin.top + margin.bottom)
-		.append("g")
-    	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+	// var margin = {top: 40, right: 40, bottom: 40, left: 40};
+	// var width  = 1300 - margin.left - margin.right;
+	// var height = 700 - margin.top - margin.bottom;
+	// vis.svg = d3.select("#" + vis.parentElement).append("svg")
+	//     .attr("width", width + margin.left + margin.right)
+	//     .attr("height", height + margin.top + margin.bottom)
+	// 	.append("g")
+ //    	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // color scales
 	vis.colorScale = d3.scale.quantize()
 		.range(colorbrewer.Reds[9]);
 
 	// set domain to be inspection scores
-	var colorScaleDomain = Object.keys(chloroplethData).reduce(function(prev, key) {
-		return prev.concat(chloroplethData[key].avg_inspection_score);
+	var colorScaleDomain = Object.keys(vis.chloroplethData).reduce(function(prev, key) {
+		return prev.concat(vis.chloroplethData[key].avg_inspection_score);
 	}, []);
 	colorScaleDomain = colorScaleDomain.sort(function(a,b) { return a - b; });
 	vis.colorScale
@@ -49,7 +50,7 @@ Chloropleth.prototype.initVis = function() {
     // });
 
  	// create map
- 	vis.map = L.map(vis.parentElement).setView([37.761655, -122.442760], 13);
+ 	vis.map = L.map(vis.parentElement).setView(vis.center, 13);
 
  	// images
  	L.Icon.Default.imagePath = "img";
@@ -59,10 +60,9 @@ Chloropleth.prototype.initVis = function() {
     	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
     }).addTo(vis.map);
 
-    // geo-json data
+    // add default geo-json layer
     vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
-      style: function(f) { 
-      	// TODO: dropdown
+      style: function(f) {
       	var inspectionScore = vis.chloroplethData[f.properties.name].avg_inspection_score;
       	var colorShade = vis.colorScale(inspectionScore);
       	return {color: colorShade};
@@ -70,8 +70,54 @@ Chloropleth.prototype.initVis = function() {
       weight: 3,
       fillOpacity: 0.6
     }).addTo(vis.map);
+
+    // add event handler to dropdown
+    vis.dropdown = document.getElementById("chloropleth-dropdown");
+    vis.dropdown.onchange = function() {
+    	vis.updateChloropleth();
+    }
 }
 
-Chloropleth.prototype.updateVis = function() {
+Chloropleth.prototype.updateChloropleth = function() {
+	var vis = this;
 
+	// get dropdown value
+	var dropdownValue = $("#chloropleth-dropdown").val();
+
+	// update color scale domain
+	var colorScaleDomain = Object.keys(vis.chloroplethData).reduce(function(prev, key) {
+		switch(dropdownValue) {
+			case "inspections":
+				return prev.concat(vis.chloroplethData[key].avg_inspection_score);
+				break;
+			case "violations":
+				return prev.concat(vis.chloroplethData[key].avg_violation_score);
+				break;
+		}
+	}, []);
+	colorScaleDomain = colorScaleDomain.sort(function(a,b) { return a - b; });
+	vis.colorScale
+		.domain([colorScaleDomain[0], colorScaleDomain[colorScaleDomain.length - 1]]);
+
+	// remove previous geo-json layer
+	vis.map.removeLayer(vis.neighorhoods);
+	
+	// add new geo-json layer
+    vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
+      style: function(f) {
+      	var score;
+      	switch(dropdownValue) {
+      		case "inspections":
+      			score = vis.chloroplethData[f.properties.name].avg_inspection_score;
+      			break;
+      		case "violations":
+      			score = vis.chloroplethData[f.properties.name].avg_violation_score;
+      			break;
+      	}
+      	var colorShade = vis.colorScale(score);
+      	return {color: colorShade};
+      },
+      weight: 3,
+      fillOpacity: 0.6
+    }).addTo(vis.map);
 }

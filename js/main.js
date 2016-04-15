@@ -3,6 +3,7 @@ var restaurantData;
 var boundaryData;
 var geoBoundaryData;
 var chloroplethData;
+var sfCoordinates = [37.761655, -122.442760];
 
 // variable for chloropleth instance
 var chloropleth;
@@ -37,5 +38,6 @@ queue()
  * Function to instantiate the visualization
  */
 function createVis() {
-	chloropleth = new Chloropleth("chloropleth", restaurantData, geoBoundaryData, chloroplethData);
+	chloropleth = new Chloropleth("chloropleth", sfCoordinates, restaurantData, 
+		geoBoundaryData, chloroplethData);
 }
