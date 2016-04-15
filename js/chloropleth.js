@@ -64,7 +64,6 @@ Chloropleth.prototype.initVis = function() {
     vis.legend = L.control({position: 'bottomleft'});
     vis.legend.onAdd = function(map) {
     	var div = L.DomUtil.create('div', 'info legend');
-    	// var categories = [0, 1, 2, 3, 4, 5, 6, 7, 8];
     	var base = vis.colorScale.domain()[0];
     	var diff = vis.colorScale.domain()[1] - vis.colorScale.domain()[0];
     	var categories = [];
@@ -73,13 +72,11 @@ Chloropleth.prototype.initVis = function() {
     		categories.push(base + (diff * mults[i]));
     	}
 	    for (var i = 0; i < categories.length; i++) {
-	    	console.log(vis.colorScale(categories[i]));
 	        div.innerHTML += '<i style="background: ' + vis.colorScale(categories[i]) + '"></i> ' + categories[i].toFixed(2) + "</br>";
 	    }
 	    return div;
     };
     vis.legend.addTo(vis.map);
-    console.log(vis.colorScale.domain());
 }
 
 Chloropleth.prototype.updateChloropleth = function() {
@@ -124,4 +121,27 @@ Chloropleth.prototype.updateChloropleth = function() {
       weight: 3,
       fillOpacity: 0.6
     }).addTo(vis.map);
+
+    // remove previous legend
+    vis.map.removeControl(vis.legend);
+
+    // add new legend
+    vis.legend = L.control({position: 'bottomleft'});
+    vis.legend.onAdd = function(map) {
+    	var div = L.DomUtil.create('div', 'info legend');
+
+    	var base = vis.colorScale.domain()[0];
+    	var diff = vis.colorScale.domain()[1] - vis.colorScale.domain()[0];
+    	var categories = [];
+    	var mults = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9];
+
+    	for (var i = 0; i < 9; i++) {
+    		categories.push(base + (diff * mults[i]));
+    	}
+	    for (var i = 0; i < categories.length; i++) {
+	        div.innerHTML += '<i style="background: ' + vis.colorScale(categories[i]) + '"></i> ' + categories[i].toFixed(2) + "</br>";
+	    }
+	    return div;
+    };
+    vis.legend.addTo(vis.map);
 }
