@@ -20,16 +20,6 @@ Chloropleth = function(_parentElement, _visCenter, _restaurantData, _geoBoundary
 Chloropleth.prototype.initVis = function() {
 	var vis = this;
 
-	// svg drawing area
-	// var margin = {top: 40, right: 40, bottom: 40, left: 40};
-	// var width  = 1300 - margin.left - margin.right;
-	// var height = 700 - margin.top - margin.bottom;
-	// vis.svg = d3.select("#" + vis.parentElement).append("svg")
-	//     .attr("width", width + margin.left + margin.right)
-	//     .attr("height", height + margin.top + margin.bottom)
-	// 	.append("g")
- //    	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
     // color scales
 	vis.colorScale = d3.scale.quantize()
 		.range(colorbrewer.Reds[9]);
@@ -41,13 +31,6 @@ Chloropleth.prototype.initVis = function() {
 	colorScaleDomain = colorScaleDomain.sort(function(a,b) { return a - b; });
 	vis.colorScale
 		.domain([colorScaleDomain[0], colorScaleDomain[colorScaleDomain.length - 1]]);
-
-    // get all neighborhoods
-    // TODO: can probably delete this later
-    // vis.neighborhoods = [];
-    // vis.geoBoundaryData.features.forEach(function(d) {
-    // 	vis.neighborhoods.push(d.properties.name);
-    // });
 
  	// create map
  	vis.map = L.map(vis.parentElement).setView(vis.center, 13);
@@ -76,6 +59,18 @@ Chloropleth.prototype.initVis = function() {
     vis.dropdown.onchange = function() {
     	vis.updateChloropleth();
     }
+
+    // add legend
+    vis.legend = L.control({position: 'bottomleft'});
+    vis.legend.onAdd = function(map) {
+    	var div = L.DomUtil.create('div', 'info legend');
+    	var categories = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+	    for (var i = 0; i < categories.length; i++) {
+	        div.innerHTML += '<i style="background:' + 'green' + '"></i> ' + categories[i] + "</br>";
+	    }
+	    return div;
+    };
+    vis.legend.addTo(vis.map);
 }
 
 Chloropleth.prototype.updateChloropleth = function() {
