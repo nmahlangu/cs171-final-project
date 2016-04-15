@@ -4,10 +4,9 @@
  *  @param _restaurantData  -- Business, inspection, and violation data for all businesses
  *  @param _boundaryData    -- Topojson data for SF boundaries
  */
-Chloropleth = function(_parentElement, _restaurantData, _boundaryData, _geoBoundaryData, _chloroplethData) {
+Chloropleth = function(_parentElement, _restaurantData, _geoBoundaryData, _chloroplethData) {
 	this.parentElement = _parentElement;
 	this.restaurantData = _restaurantData;
-	this.boundaryData = _boundaryData;
 	this.geoBoundaryData = _geoBoundaryData;
 	this.chloroplethData = _chloroplethData;
 
