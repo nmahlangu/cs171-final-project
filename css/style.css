@@ -21,8 +21,8 @@ h1 .sub-headline {
 }
 
 #chloropleth {
-	width: 100%;
-	height: 1000px;
+	width: 900px;
+	height: 700px;
 }
 
 #chloropleth-dropdown {
@@ -41,4 +41,20 @@ h1 .sub-headline {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+}
+
+#chloropleth-tooltip-box {
+	background-color: rgba(228, 200, 180, 0.51);
+	width: 300px;
+	height: 500px;
+	overflow: auto;
+	font-size: 13px;
+	padding: 15px;
+}
+
+.chloropleth-tooltip-header {
+	margin-top: 15px;
+	text-decoration: underline;
+	text-align: center;
+	font-weight: 400;
 }

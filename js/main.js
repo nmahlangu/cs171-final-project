@@ -27,7 +27,7 @@ queue()
 		console.log("chloroplethData: ");
 		console.log(_chloroplethData);
 
-		restaurantData = _restaurantData;
+		restaurantData = _restaurantData[0];
 		geoBoundaryData = _geoBoundaryData;
 		chloroplethData = _chloroplethData;
 
