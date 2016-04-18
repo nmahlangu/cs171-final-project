@@ -18,16 +18,16 @@
   <div class="container-fluid">
     <h1 id="page_title">I Love Food: San Francisco Edition</h1>
 
-    <!-- Chloropleth -->
+    <!-- ************************************* Chloropleth ************************************* -->
     <div class="row">
       <div class="col-md-12">
         <!-- chloropleth headline -->
         <h1>Chloropleth
-          <span class="divider">|</span>
+          <!-- <span class="divider">|</span>
           <span class="sub-headline">
             <span id="city">
             </span> San Francisco
-          </span>
+          </span> -->
         </h1>
         <!-- chloropleth drop down -->
         <select class="form-control" id="chloropleth-dropdown">
@@ -50,7 +50,34 @@
       </div>
     </div>
 
+    <!-- ************************************* Truck Animation ************************************* -->
+    <div id="wrapper">
+      <div id="map"></div>
+      <button id="play">Play</button>
+      <span id="clock">Hour</span>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Headline -->
+        <h1>Food Truck Routes in SF
+          <!--<span class="divider">|</span>
+          <span class="sub-headline">
+            <span id="truck-count"></span> Trucks
+          </span> -->
+        </h1>
+        <!-- animation visualization -->
+        <div id="truck-route-map"></div>
+        </br>
+      </div>
+    </div>
 
+    <!-- ************************************* Heatmap ************************************* -->
+    <div class="row">
+      <!-- headline -->
+      <h1>Food Truck Heat Map</h1>
+      <!-- heat map visualization -->
+      <div id="heat-map"></div>
+    </div>
   </div>
 
   <!-- Load JS libraries -->
@@ -61,9 +88,12 @@
   <script src="js/leaflet.js"></script>
   <script src="js/topojson.js"></script>
   <script src="js/colorbrewer.js"></script>
+  <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
 
   <!-- Visualization objects -->
   <script src="js/chloropleth.js"></script>
+  <script src="js/truckRoute.js"></script>
+  <script src="js/heatMap.js"></script>
 
   <!-- Load data, create visualizations -->
   <script src="js/main.js"></script>
