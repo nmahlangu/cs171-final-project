@@ -5,11 +5,14 @@
  *  @param _data            -- Array with all truck locations and opening indicator, indexed by hour
  */
 
-TruckMap = function(_parentElement, _timeTable, _mapPosition) {
-  this.parentElement = _parentElement;
-  this.timeTable = _timeTable;
-  this.mapPosition = _mapPosition;
-  this.initVis();
+TruckMap = function(_parentElement, _timeTable, _truckData, _truck_to_index, _index_to_truck, _mapPosition) {
+    this.parentElement = _parentElement;
+    this.timeTable = _timeTable;
+    this.truckData = _truckData;
+    this.truck_to_index = _truck_to_index;
+    this.index_to_truck = _index_to_truck;
+    this.mapPosition = _mapPosition;
+    this.initVis();
 };
 
 /*
@@ -99,10 +102,15 @@ TruckMap.prototype.initVis = function() {
             }
         })
         .on('mouseover', function(d) {
+
+            var truck_id = vis.index_to_truck[vis.timeTable.indexOf(d).toString()];
+
+            var truck = vis.truckData[truck_id.toString()];
+
             div.transition()
                 .duration(200)
                 .style("opacity", .9);
-            div	.html("HI")
+            div	.html(truck.info.name + "<br/>" + "Cold Truck:" + truck.info.cold_truck + "<br/>" + truck.info.desc)
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px");
         })
