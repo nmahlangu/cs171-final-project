@@ -59,6 +59,11 @@ TruckMap.prototype.initVis = function() {
     //.style("left", topLeft[0] - 50 + "px")
     //.style("top", topLeft[1] - 50 + "px");
 
+    // Define the div for the tooltip
+    var div = d3.select("body").append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0);
+
     // draw circles for each truck
     vis.trucks = vis.svg.selectAll(".circle")
         .data(vis.timeTable)
@@ -92,89 +97,37 @@ TruckMap.prototype.initVis = function() {
             else {
                 return 0.3;
             }
+        })
+        .on('mouseover', function(d) {
+            div.transition()
+                .duration(200)
+                .style("opacity", .9);
+            div	.html("HI")
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px");
+        })
+        .on('mouseout', function(d) {
+            div.transition()
+                .duration(500)
+                .style("opacity", 0);
         });
 
 
-    //vis.map.on("viewreset", reset);
+    vis.map.on("viewreset", function(){
+        vis.trucks
+            .attr('cx', function(d){
+                var position = d[vis.hour];
+                return vis.map.latLngToLayerPoint(new L.LatLng(position[0], position[1]))['x'];
+            })
+            .attr('cy', function(d){
+                var position = d[vis.hour];
+                return vis.map.latLngToLayerPoint(new L.LatLng(position[0], position[1]))['y'];
+            })
+    });
 
 
     vis.animateTrucks();
 
-
-    //reset();
-    //transition();
-
-    //function reset() {
-  //    var bounds = d3path.bounds(data),
-  //        topLeft = bounds[0],
-  //        bottomRight = bounds[1];
-  //
-  //
-  //    text.attr("transform",
-  //        function(d) {
-  //          return "translate(" +
-  //              applyLatLngToLayer(d).x + "," +
-  //              applyLatLngToLayer(d).y + ")";
-  //        });
-  //
-  //    begend.attr("transform",
-  //        function(d) {
-  //          return "translate(" +
-  //              applyLatLngToLayer(d).x + "," +
-  //              applyLatLngToLayer(d).y + ")";
-  //        });
-  //
-  //    vis.trucks
-  //        .attr("transform",
-  //        function(d) {
-  //          return "translate(" +
-  //              applyLatLngToLayer(d).x + "," +
-  //              applyLatLngToLayer(d).y + ")";
-  //        });
-
-      //vis.trucks.attr("transform",
-      //    function() {
-      //      //var position = vis.timeTable[0]
-      //      return "translate(" +
-      //          vis.map.latLngToLayerPoint(new L.LatLng(y, x)).x + "," +
-      //          vis.map.latLngToLayerPoint(new L.LatLng(y, x)).y + ")";
-      //    });
-  //
-  //    svg.attr("width", bottomRight[0] - topLeft[0] + 120)
-  //        .attr("height", bottomRight[1] - topLeft[1] + 120)
-  //        .style("left", topLeft[0] - 50 + "px")
-  //        .style("top", topLeft[1] - 50 + "px");
-  //
-  //    linePath.attr("d", toLine)
-  //    // ptPath.attr("d", d3path);
-  //    g.attr("transform", "translate(" + (-topLeft[0] + 50) + "," + (-topLeft[1] + 50) + ")");
-  //
-  //  }
-  //
-  //  function transition() {
-  //    linePath.transition()
-  //        .duration(7500)
-  //        .attrTween("stroke-dasharray", tweenDash)
-  //        .each("end", function() {
-  //          d3.select(this).call(transition);// infinite loop
-  //        });
-  //  }
-
-  //
-  //  function projectPoint(x, y) {
-  //    var point = vis.map.latLngToLayerPoint(new L.LatLng(y, x));
-  //    this.stream.point(point.x, point.y);
-  //  }
-  //
-  //  });
-  //
-  //function applyLatLngToLayer(d) {
-  //  var y = d.geometry.coordinates[1]
-  //  var x = d.geometry.coordinates[0]
-  //  return vis.map.latLngToLayerPoint(new L.LatLng(y, x))
-  //
-  //
-  //}
 
 };
 
