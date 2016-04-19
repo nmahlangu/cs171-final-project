@@ -1,0 +1,2169 @@
+36926: Cow Hollow
+4546: Pacific Heights
+67508: Polk Gulch
+27874: Bayview
+37389: North Beach
+70434: West of Twin Peaks
+69753: Western Addition
+68330: Lower Nob Hill
+71126: Richmond District
+7461: Pacific Heights
+62768: Inner Sunset
+62769: N/A
+71347: Mission District
+7001: Chinatown
+62765: Central Richmond
+62767: Inner Sunset
+7005: Financial District
+60588: Financial District
+18686: Tenderloin
+29246: Bernal Heights
+5221: Alamo Square
+39665: Polk Gulch
+5226: Tenderloin
+39667: N/A
+37090: South of Market
+11860: Tenderloin
+70892: Richmond District
+18514: Mission District
+71232: Chinatown
+65348: Mission District
+68696: Richmond District
+71057: South of Market
+68694: Financial District
+68692: Mission District
+68690: Tenderloin
+2858: Financial District
+67195: Marina District
+67196: Noe Valley
+67625: Richmond District
+68698: South of Market
+68699: Richmond District
+7175: Laurel Heights
+3062: Tenderloin
+17946: Mission Dolores
+17947: Central Richmond
+6895: Tenderloin
+3065: South of Market
+33911: Richmond District
+61643: South Beach
+18330: South of Market
+2944: North Beach
+2943: North Beach
+33914: Oceanview
+2941: Financial District
+33916: South of Market
+27472: North Beach
+7303: Tenderloin
+38032: Oceanview
+38030: Embarcadero
+58750: South of Market
+845: North Beach
+30156: Nob Hill
+68219: Excelsior
+1692: Financial District
+67534: South of Market
+2919: Financial District
+69282: Sunset District
+70210: Mission District
+37892: Financial District
+33591: Sunset District
+1699: Richmond District
+67448: Bayview
+619: Ingleside
+66919: Bernal Heights
+66918: South of Market
+610: Inner Sunset
+1273: North of the Panhandle
+1274: The Castro
+615: Outer Mission
+11047: Tenderloin
+34388: Cow Hollow
+8249: Embarcadero
+59407: Sunset District
+2375: Alamo Square
+64434: North Beach
+39293: N/A
+39294: Financial District
+39295: Tenderloin
+34387: Cow Hollow
+14568: Richmond District
+38106: Richmond District
+38104: Lower Nob Hill
+62010: Mission District
+3118: N/A
+3116: Financial District
+3115: Chinatown
+3114: North Beach
+3112: Lower Nob Hill
+3111: Lower Nob Hill
+7321: Marina District
+15961: Financial District
+64067: Richmond District
+68503: Mission Dolores
+69033: Sunnyside
+24930: Marina District
+61457: Lower Nob Hill
+28044: N/A
+1304: Inner Sunset
+6966: Chinatown
+34126: Lower Nob Hill
+1300: Mission District
+3335: Polk Gulch
+34434: South Beach
+3591: Central Richmond
+34496: North of the Panhandle
+5744: Paradise Valley
+4229: Mission District
+67840: South of Market
+6843: Lakeshore
+494: North Beach
+496: North Beach
+4227: Outer Mission
+11304: Embarcadero
+4221: Sunset District
+27680: Russian Hill
+6478: Richmond District
+3595: Richmond District
+67985: South of Market
+34685: Marina District
+7597: Richmond District
+6472: Inner Sunset
+3594: Sunset District
+61669: Financial District
+6475: Richmond District
+6474: Tenderloin
+7308: Richmond District
+7759: Outer Mission
+7755: Inner Sunset
+38231: North Beach
+7757: Mission District
+6845: Financial District
+7772: Mission District
+66715: Mission District
+39625: North Beach
+66717: Mission Dolores
+32897: North Beach
+3935: Lower Nob Hill
+3936: Tenderloin
+5033: Glen Park
+28828: Dogpatch
+34721: Presidio Heights
+34726: Presidio Heights
+6718: N/A
+34724: Pacific Heights
+6716: North Beach
+6717: Chinatown
+69353: Lower Nob Hill
+34728: South Beach
+66489: Central Richmond
+6711: Chinatown
+19061: South of Market
+19060: South of Market
+19063: South of Market
+19064: South of Market
+39076: Financial District
+4434: Noe Valley
+4130: Cow Hollow
+7474: Lower Nob Hill
+61598: Sunset District
+68633: Financial District
+4135: Tenderloin
+4136: N/A
+24437: North Beach
+3846: The Castro
+39776: Mission District
+65014: Bayview
+4465: North Beach
+71357: N/A
+61467: Mission District
+38929: Mission District
+65934: Western Addition
+38427: Excelsior
+19205: The Castro
+19207: Tenderloin
+64021: Western Addition
+4044: Polk Gulch
+4045: Tenderloin
+4046: Tenderloin
+4047: Tenderloin
+69246: Noe Valley
+61460: Potrero Hill
+13753: Cole Valley
+36614: The Castro
+6660: Tenderloin
+6661: Russian Hill
+4048: Hayes Valley
+6667: Bayview
+4438: South of Market
+5968: Chinatown
+5969: Laurel Heights
+69485: Sunset District
+61500: Richmond District
+4614: Chinatown
+5961: Cow Hollow
+5962: Pacific Heights
+5963: N/A
+10875: Alamo Square
+5965: Noe Valley
+10877: Richmond District
+10876: Central Richmond
+3665: South of Market
+3664: South of Market
+63992: Sunset District
+69069: Noe Valley
+3661: Mission Dolores
+63624: Marina District
+3699: N/A
+2280: Central Richmond
+64503: Inner Sunset
+2282: Richmond District
+18256: South Beach
+69066: Fillmore District
+4947: Pacific Heights
+16329: Potrero Hill
+65582: Chinatown
+4548: North Beach
+73: Pacific Heights
+4538: Sunset District
+4542: West of Twin Peaks
+4545: Mount Davidson Manor
+4544: Sunset District
+60535: Russian Hill
+4539: West of Twin Peaks
+21921: Lower Nob Hill
+7545: Central Richmond
+4828: Cole Valley
+2578: North Beach
+2579: Embarcadero
+57581: South of Market
+57584: South of Market
+7274: Russian Hill
+4461: Lower Nob Hill
+2374: North of the Panhandle
+24936: Financial District
+68672: South of Market
+2373: North of the Panhandle
+591: Inner Sunset
+2596: Central Richmond
+2597: The Castro
+69113: Polk Gulch
+2592: Tenderloin
+2593: Richmond District
+63191: South of Market
+5032: Bernal Heights
+2599: Excelsior
+69118: Chinatown
+7275: Sunset District
+16432: North Beach
+1874: Cole Valley
+69181: Mission Dolores
+1870: Financial District
+60400: The Castro
+63757: N/A
+7911: Bayview
+38580: Mission District
+38586: Polk Gulch
+7915: Richmond District
+7574: Western Addition
+4944: Sunset District
+36730: Richmond District
+597: Richmond District
+6281: North Beach
+4791: South Park
+6987: Chinatown
+180: Bernal Heights
+187: Lakeshore
+184: Mission District
+2110: Tenderloin
+68674: Russian Hill
+68769: Mission District
+6636: South of Market
+2115: Polk Gulch
+2117: Lower Nob Hill
+14022: South of Market
+2620: Cole Valley
+63287: Lower Haight
+63280: Sunset District
+14027: Outer Mission
+69489: Financial District
+66927: South of Market
+68811: Mission District
+9582: Western Addition
+7350: Mission District
+7353: Haight-Ashbury
+37462: Sunset District
+7355: Western Addition
+62578: Chinatown
+3289: Western Addition
+7989: Bayview
+3286: Polk Gulch
+10011: Mission Dolores
+1912: Sunset District
+3283: Western Addition
+3282: North of the Panhandle
+5104: North Beach
+3280: Western Addition
+60713: South of Market
+39401: Richmond District
+38457: Polk Gulch
+33160: South of Market
+69437: South of Market
+13218: South Beach
+3444: North Beach
+3446: North Beach
+39980: Mission District
+3440: N/A
+3443: North Beach
+2756: Laurel Heights
+2027: Western Addition
+2020: Pacific Heights
+2750: Noe Valley
+62978: South of Market
+36396: Sunset District
+12344: Lakeshore
+2758: Pacific Heights
+2759: The Castro
+59744: Tenderloin
+2622: Excelsior
+880: Chinatown
+33348: Mission District
+71682: Financial District
+33619: Bayview
+3728: South Beach
+14971: Pacific Heights
+4590: Mid-Market
+34865: Noe Valley
+5214: Tenderloin
+5215: Tenderloin
+5212: Mission District
+10470: Cow Hollow
+5210: N/A
+5211: Civic Center
+62710: Civic Center
+58611: North Beach
+58610: Golden Gate Park
+62717: Lower Haight
+2627: The Castro
+65138: Lower Haight
+782: Potrero Hill
+36494: South of Market
+60331: Potrero Hill
+62487: Mission District
+2821: Russian Hill
+14800: Central Richmond
+40109: Sunset District
+71208: Mission District
+58922: Crocker-Amazon
+70884: Noe Valley
+33190: Financial District
+68190: Mission District
+4800: Bernal Heights
+37060: Richmond District
+36645: Fisherman's Wharf
+59520: Richmond District
+774: South of Market
+71065: Tenderloin
+66259: Mission District
+67612: Pacific Heights
+67611: Financial District
+7503: Financial District
+67617: Mission District
+67615: South of Market
+67614: Financial District
+77: Financial District
+39052: South Beach
+17933: Tenderloin
+7104: Lower Haight
+6869: Polk Gulch
+71: Western Addition
+3059: North Beach
+2972: South of Market
+2973: South of Market
+2970: Financial District
+2971: N/A
+39513: Hayes Valley
+3053: Polk Gulch
+2974: Lakeshore
+6863: Polk Gulch
+1043: North of the Panhandle
+1042: Lower Haight
+5480: South Beach
+1047: Haight-Ashbury
+68220: Central Richmond
+61789: South of Market
+68998: Richmond District
+1048: Haight-Ashbury
+7333: Westwood Park
+4553: Cow Hollow
+1685: Financial District
+61161: Richmond District
+1687: Financial District
+66318: N/A
+68160: Western Addition
+39176: Russian Hill
+67050: Inner Sunset
+69368: Financial District
+67500: Sunset District
+65369: Embarcadero
+1269: South Beach
+67276: Cow Hollow
+8251: Embarcadero
+64333: Financial District
+217: Bernal Heights
+1263: Haight-Ashbury
+1262: Haight-Ashbury
+1261: Cole Valley
+66675: Civic Center
+1265: Inner Sunset
+66255: South of Market
+33837: Polk Gulch
+14575: South of Market
+33831: The Castro
+7475: North Beach
+7635: Bayview
+34397: Lakeshore
+34394: Richmond District
+34395: Financial District
+62023: The Castro
+38112: Civic Center
+3129: Lower Nob Hill
+66276: Bayview
+68257: West of Twin Peaks
+3122: Financial District
+63576: Bernal Heights
+3120: North Beach
+3121: Financial District
+7610: South of Market
+64231: Western Addition
+37115: Financial District
+68530: N/A
+1469: North Beach
+62573: Crocker-Amazon
+68535: Financial District
+1465: Central Richmond
+520: Sunset District
+1466: Pacific Heights
+66874: Financial District
+522: Lakeshore
+34647: Western Addition
+34649: Western Addition
+35737: Western Addition
+60711: Tenderloin
+1318: Central Richmond
+3976: South Beach
+67871: The Castro
+15352: Western Addition
+4239: Mission Dolores
+4238: Mission District
+3449: North Beach
+4235: Mission District
+9328: Outer Mission
+4231: Lower Haight
+4230: Mission District
+7538: South of Market
+61612: South Beach
+68615: Embarcadero
+61618: Civic Center
+59251: North Beach
+529: Richmond District
+37818: Russian Hill
+3445: North Beach
+7809: Civic Center
+35026: Tenderloin
+7722: North Beach
+68259: Richmond District
+38201: South Beach
+38202: Excelsior
+3948: South of Market
+61438: North of the Panhandle
+66704: Mission District
+318: Marina District
+66702: Mission District
+6123: Financial District
+66700: Outer Mission
+32556: Richmond District
+61122: South of Market
+3942: Marina District
+32887: Mission Dolores
+35359: Western Addition
+34505: Potrero Hill
+315: The Castro
+38458: Western Addition
+37344: Civic Center
+66492: Civic Center
+7576: Western Addition
+64549: Sunset District
+4211: South of Market
+28836: Tenderloin
+6704: Chinatown
+7768: Hayes Valley
+6706: Chinatown
+15222: South Beach
+64420: Visitacion Valley
+4128: Russian Hill
+19076: Richmond District
+4122: Polk Gulch
+4121: Marina District
+4120: Cow Hollow
+4127: Russian Hill
+4126: Russian Hill
+4125: Russian Hill
+4124: Polk Gulch
+27789: North Beach
+2755: Presidio Heights
+39246: Sunset District
+61058: Alamo Square
+61056: Pacific Heights
+65925: Financial District
+65004: Financial District
+35286: Pacific Heights
+60828: Mission District
+60898: Marina District
+16551: Financial District
+60230: Tenderloin
+65396: Mission District
+6674: Excelsior
+6677: Excelsior
+6671: Potrero Hill
+7747: Balboa Park
+444: Financial District
+69978: South Beach
+4702: Noe Valley
+4057: South of Market
+4056: Embarcadero
+4055: Chinatown
+4054: Excelsior
+69909: La Lengua
+65392: Haight-Ashbury
+69279: Dogpatch
+69275: South of Market
+69388: Fillmore District
+69272: South of Market
+27093: Cow Hollow
+39851: Cow Hollow
+5970: Marina District
+5977: Oceanview
+5976: Central Richmond
+5975: Inner Sunset
+5974: Central Richmond
+32170: Mission District
+3611: Civic Center
+2299: Western Addition
+2298: West of Twin Peaks
+3614: Mission District
+3615: Mission Dolores
+3616: Mission District
+63618: Polk Gulch
+2293: Sunset District
+2292: Sunset District
+63615: Sunset District
+69299: Bayview
+5770: N/A
+65754: South Beach
+6643: Tenderloin
+65752: The Castro
+886: Financial District
+5902: Russian Hill
+6912: South Beach
+69257: Mission District
+2561: Mid-Market
+884: Financial District
+5196: N/A
+39495: Tenderloin
+65350: Crocker-Amazon
+2369: Mission District
+65358: Inner Sunset
+63169: Mission District
+66220: Western Addition
+2363: La Lengua
+6813: West of Twin Peaks
+2360: Mission District
+69123: Lakeshore
+57552: Financial District
+69121: South of Market
+69127: Bayview
+7295: Oceanview
+69125: South of Market
+2580: South of Market
+66985: Polk Gulch
+5025: La Lengua
+39862: Lakeshore
+2589: Tenderloin
+2588: Tenderloin
+64717: Mission Dolores
+4443: Mission District
+1865: North Beach
+3729: Lower Nob Hill
+1867: Financial District
+1866: Financial District
+16424: Bernal Heights
+4449: La Lengua
+3727: N/A
+17689: South Beach
+7241: Marina District
+4686: Lakeshore
+4932: Financial District
+4685: Oceanview
+4683: Westwood Park
+4681: Sunset District
+6297: Financial District
+6296: Financial District
+6295: Financial District
+968: Sunset District
+4688: Lakeshore
+69057: Noe Valley
+2109: Lower Nob Hill
+64530: Tenderloin
+7409: La Lengua
+2107: Tenderloin
+2106: Tenderloin
+2104: Tenderloin
+6500: Pacific Heights
+2638: Mission Dolores
+63813: N/A
+62360: Central Richmond
+62362: Russian Hill
+5118: Sunset District
+69172: North Beach
+2632: Bernal Heights
+4672: Sunset District
+9599: Financial District
+7708: Noe Valley
+9226: Cow Hollow
+64242: Dogpatch
+62560: Outer Mission
+62561: North of the Panhandle
+71328: Dolores Heights
+3439: North Beach
+33113: Tenderloin
+38442: Western Addition
+33114: South Beach
+33117: Western Addition
+65007: Civic Center
+7266: Chinatown
+3431: Russian Hill
+3432: Russian Hill
+3433: Nob Hill
+3090: South Beach
+3437: North Beach
+4592: Sunnydale
+4593: North Beach
+2743: Mission District
+3091: South of Market
+2032: Western Addition
+2031: Western Addition
+2749: La Lengua
+36412: Western Addition
+4598: South Beach
+5219: South of Market
+34418: Western Addition
+4841: Cole Valley
+2039: Pacific Heights
+1244: Central Richmond
+14909: Lower Nob Hill
+39773: The Castro
+892: Financial District
+63265: Sunset District
+71696: Western Addition
+7325: South of Market
+33620: Haight-Ashbury
+5254: Dogpatch
+5200: Mission District
+62708: Polk Gulch
+7327: Lakeshore
+39962: Chinatown
+34814: Financial District
+5206: Western Addition
+5209: South of Market
+5208: Marina District
+62701: Financial District
+62706: Lower Haight
+80: Inner Richmond
+3237: Sunset District
+36677: Haight-Ashbury
+68456: South of Market
+3547: Financial District
+36673: Lower Nob Hill
+3541: Financial District
+68452: Financial District
+3543: Financial District
+1619: Mission District
+3548: Financial District
+21557: Inner Sunset
+36678: Mission District
+18538: Embarcadero
+422: Russian Hill
+37078: The Castro
+5194: Sunnyside
+18826: Pacific Heights
+36215: North Beach
+18824: West of Twin Peaks
+18825: Noe Valley
+33020: Tenderloin
+18310: Excelsior
+33936: Bayview
+33935: Bernal Heights
+39778: Financial District
+5191: Haight-Ashbury
+760: South Beach
+2969: Richmond District
+71071: Tenderloin
+7329: Sunset District
+62140: Richmond District
+3048: Polk Gulch
+70619: Richmond District
+7110: North of the Panhandle
+62632: South of Market
+62631: Potrero Hill
+3043: Marina District
+10083: Financial District
+6873: Alamo Square
+3046: N/A
+68982: N/A
+68234: South of Market
+5378: Western Addition
+1075: Mission District
+40001: Haight-Ashbury
+71456: Tenderloin
+40007: Richmond District
+67049: South Beach
+1674: N/A
+40008: Tenderloin
+1677: South of Market
+67514: N/A
+1671: Dogpatch
+1672: South Beach
+1673: South Beach
+63404: Mission District
+12083: South of Market
+1090: Financial District
+71634: Civic Center
+642: Western Addition
+65057: Cow Hollow
+4335: South of Market
+66466: Chinatown
+4333: Tenderloin
+854: Russian Hill
+3134: Financial District
+39476: Mission District
+21982: Bernal Heights
+3133: Financial District
+68442: Financial District
+59397: Mission District
+59396: Financial District
+27525: N/A
+14740: Sunset District
+7608: South of Market
+4630: Oceanview
+7477: North Beach
+7605: South of Market
+66244: South of Market
+7603: North Beach
+7602: North Beach
+7601: North Beach
+7600: North Beach
+6019: Western Addition
+5192: Dolores Heights
+67601: Ingleside
+67602: N/A
+37101: Mission District
+68525: Mission District
+1413: Central Richmond
+60290: Sunset District
+13374: Twin Peaks
+1322: Pacific Heights
+1323: Cow Hollow
+61861: South of Market
+66806: South Beach
+66808: Fillmore District
+4209: Chinatown
+67869: Richmond District
+4202: South Beach
+5767: Haight-Ashbury
+4206: N/A
+5760: Tenderloin
+59065: Financial District
+15184: Sunset District
+59066: Richmond District
+66534: Lakeshore
+773: South of Market
+61604: Bayview
+2397: Haight-Ashbury
+5564: Nob Hill
+67584: Lakeshore
+5562: Civic Center
+1526: Pacific Heights
+1527: South of Market
+34033: Nob Hill
+67495: Mission District
+1529: South of Market
+1259: The Castro
+66732: South of Market
+3959: Embarcadero
+66737: South of Market
+35340: Excelsior
+850: North Beach
+300: Pacific Heights
+302: Tenderloin
+19440: Financial District
+31319: Mission District
+305: Marina District
+3955: South Beach
+6982: Chinatown
+34749: South Beach
+9290: Financial District
+69861: Financial District
+4112: Polk Gulch
+4110: Western Addition
+4111: Polk Gulch
+34743: South Beach
+68753: South of Market
+34747: Chinatown
+34746: Cow Hollow
+71592: Sunset District
+6730: Chinatown
+19043: Sunset District
+2978: Mission District
+19041: South of Market
+38307: North Beach
+27799: N/A
+7421: Financial District
+61736: Mission District
+27793: N/A
+27790: Civic Center
+27791: N/A
+7429: South of Market
+7105: Haight-Ashbury
+5010: South of Market
+35812: Potrero Hill
+61550: Financial District
+69592: Civic Center
+5791: Sunset District
+70: Tenderloin
+65611: Bernal Heights
+69595: Civic Center
+7796: Excelsior
+3056: Tenderloin
+6606: Polk Gulch
+6607: Dogpatch
+7450: Richmond District
+4789: South of Market
+35507: Marina District
+3054: Fisherman's Wharf
+35503: Dogpatch
+4062: Russian Hill
+4063: North Beach
+65293: South of Market
+3055: Western Addition
+4066: Russian Hill
+4067: North Beach
+4064: Lower Nob Hill
+4065: North Beach
+6860: Russian Hill
+4068: North Beach
+4069: North Beach
+7410: Richmond District
+5948: Lakeshore
+7664: Mission District
+5018: South of Market
+5786: Cow Hollow
+5787: Sunset District
+3050: Western Addition
+5019: Mission District
+69466: Bernal Heights
+69465: Mission District
+5788: Sunset District
+5789: Sunset District
+60551: Civic Center
+60550: Civic Center
+3607: Lakeshore
+60554: North of the Panhandle
+63978: Dolores Heights
+68226: South of Market
+63601: South of Market
+63602: Western Addition
+6734: Chinatown
+69288: Fillmore District
+63971: Financial District
+5038: Marina District
+62915: South of Market
+65819: Haight-Ashbury
+4894: Lower Haight
+65725: N/A
+65724: N/A
+60254: North Beach
+7182: Tenderloin
+63303: Western Addition
+6735: Russian Hill
+7068: Mission District
+6112: Western Addition
+5039: Marina District
+64745: Civic Center
+2358: Mission District
+2359: Mission District
+64741: South of Market
+7856: Russian Hill
+2352: Mission District
+2356: Mission District
+2357: Mission District
+7283: Central Richmond
+38875: Marina District
+7280: West of Twin Peaks
+63773: Financial District
+5267: Bayview
+21785: Financial District
+9450: Lower Nob Hill
+39875: South of Market
+7778: Outer Mission
+65434: Tenderloin
+39053: South Beach
+9948: South of Market
+3739: Laurel Heights
+3738: Richmond District
+1894: Richmond District
+3736: Richmond District
+1896: Richmond District
+68407: Potrero Hill
+21143: South Beach
+2136: West of Twin Peaks
+4922: Mission District
+2134: South of Market
+2135: South Beach
+2132: South Beach
+4694: Western Addition
+4925: Mission District
+2131: Marina District
+951: Sunset District
+61953: Civic Center
+952: Sunset District
+2138: Financial District
+7663: Mission District
+69041: Chinatown
+64524: Inner Sunset
+64525: Inner Sunset
+6021: Potrero Hill
+6025: Western Addition
+2648: Mission District
+2649: Mission District
+63804: Civic Center
+63554: Tenderloin
+67509: Financial District
+63800: Hayes Valley
+5168: Pacific Heights
+36889: Bernal Heights
+2643: The Castro
+2645: Mission Dolores
+2646: Mission Dolores
+62824: North of the Panhandle
+68616: Bernal Heights
+4803: Excelsior
+68345: Financial District
+62552: Tenderloin
+62551: Tenderloin
+62550: Tenderloin
+509: Sunset District
+3429: North Beach
+3428: North Beach
+69176: N/A
+68342: Sunset District
+38479: South Beach
+3420: Bayview
+3426: Bayview
+3425: Bayview
+3424: Dogpatch
+2002: Lakeshore
+4417: Polk Gulch
+6337: Anza Vista
+71058: Western Addition
+2007: Financial District
+2004: North Beach
+475: Russian Hill
+4584: Bernal Heights
+2008: Richmond District
+4586: Outer Mission
+6338: Outer Mission
+4415: N/A
+4850: Ingleside
+62735: Mission District
+59727: North Beach
+18491: The Castro
+62730: Financial District
+59898: Cow Hollow
+36758: Lower Haight
+14910: Lower Nob Hill
+68774: Tenderloin
+62739: Mission District
+36452: Haight-Ashbury
+68403: Richmond District
+4411: Civic Center
+9672: Embarcadero
+68832: Bayview
+10107: N/A
+4410: Civic Center
+58637: South of Market
+9679: Financial District
+10102: Tenderloin
+3557: Financial District
+68422: South of Market
+3550: Financial District
+63156: Dolores Heights
+4304: Tenderloin
+63150: Mid-Market
+66511: Mission District
+66900: Mission District
+18818: Financial District
+66901: Richmond District
+665: Cow Hollow
+18815: La Lengua
+33747: Embarcadero
+33920: Civic Center
+1798: South of Market
+33926: North Beach
+2917: Financial District
+1792: Mission District
+1791: Richmond District
+1797: Mission District
+1796: Crocker-Amazon
+67371: Inner Sunset
+6421: West of Twin Peaks
+6848: Western Addition
+69511: South of Market
+15752: Financial District
+7124: Mission District
+68766: Financial District
+6846: North of the Panhandle
+6844: Financial District
+59651: Excelsior
+6319: Bayview
+1060: Lower Haight
+29455: Noe Valley
+64835: Pacific Heights
+1065: Mission District
+20367: Excelsior
+5307: Lakeshore
+60345: Mid-Market
+18253: Richmond District
+68739: Embarcadero
+1668: Bayview
+68089: Bayview
+1664: N/A
+33638: Outer Mission
+6750: Sunset District
+67075: Sunset District
+15537: Potrero Hill
+15536: Fisherman's Wharf
+15535: North Beach
+67250: Tenderloin
+60114: Tenderloin
+1081: Mission Dolores
+4320: South of Market
+67259: Sunset District
+14577: Tenderloin
+68959: Haight-Ashbury
+66387: Financial District
+4327: Tenderloin
+4179: Excelsior
+18079: Central Richmond
+39403: Bayview
+2829: Sunset District
+5507: South Beach
+37820: Lakeshore
+2826: Russian Hill
+63874: Inner Sunset
+24278: South of Market
+24279: Sunset District
+2823: N/A
+62048: Mission District
+65580: Financial District
+67385: Chinatown
+66515: Financial District
+28035: Diamond Heights
+66251: Richmond District
+9748: South of Market
+7636: Bayview
+5993: Central Richmond
+7634: Embarcadero
+68504: Lower Nob Hill
+34244: Financial District
+68558: Civic Center
+1409: South Beach
+65111: Mission District
+67676: Mission District
+4622: N/A
+3962: South Beach
+1401: Lower Nob Hill
+71380: Mission Dolores
+5792: Sunset District
+4214: Bayview
+4217: Sunset District
+448: Russian Hill
+1339: Glen Park
+3960: Embarcadero
+443: North Beach
+442: Russian Hill
+1337: Bernal Heights
+65115: Sunset District
+447: Russian Hill
+35199: Excelsior
+1332: Noe Valley
+5810: Outer Mission
+6931: Bernal Heights
+6934: Outer Mission
+18102: Richmond District
+5771: Anza Vista
+39584: South Beach
+5773: Central Richmond
+67815: Mission District
+65833: Nob Hill
+7702: Mission District
+26752: N/A
+39139: Bayview
+31: North Beach
+695: Tenderloin
+1931: Inner Sunset
+67149: Marina District
+5815: Noe Valley
+1241: Sunset District
+25878: Lower Nob Hill
+1243: Mission Dolores
+1534: Financial District
+645: Western Addition
+1532: Chinatown
+68395: Lower Nob Hill
+3095: South of Market
+1249: Mission District
+67494: Lakeshore
+5817: Lakeshore
+5129: South of Market
+765: Potrero Hill
+66279: Dolores Heights
+335: Russian Hill
+337: Sunset District
+66419: The Castro
+4101: Outer Mission
+24978: Dogpatch
+4104: Ingleside
+67923: Bayview
+4106: Potrero Hill
+4108: Embarcadero
+64648: Mission District
+19058: South of Market
+19059: South of Market
+9164: South Beach
+19055: South of Market
+19056: South of Market
+19057: South of Market
+7413: La Lengua
+3898: South Beach
+3899: The Castro
+7417: Mission District
+22304: South Beach
+3892: N/A
+68537: Mission District
+24457: Richmond District
+3896: South Beach
+38318: South Beach
+3895: North Beach
+61563: South of Market
+847: North Beach
+32995: Civic Center
+32992: Inner Sunset
+67754: Financial District
+71310: Financial District
+68356: Financial District
+25651: Western Addition
+7379: Mission District
+25301: South of Market
+61093: Richmond District
+1635: Haight-Ashbury
+7276: Tenderloin
+6619: Chinatown
+842: Russian Hill
+5951: Lakeshore
+5950: Outer Mission
+5953: Mission District
+5952: Mission District
+4079: Financial District
+4078: Sunset District
+4618: Lower Nob Hill
+5959: Glen Park
+5958: Richmond District
+4077: Inner Sunset
+4076: North Beach
+4071: North Beach
+67703: North Beach
+4072: Financial District
+5797: Balboa Terrace
+5083: Tenderloin
+5794: Sunset District
+32570: Chinatown
+3963: South Beach
+39133: Richmond District
+5790: Sunset District
+39888: Noe Valley
+32578: Financial District
+32579: Central Richmond
+60547: Civic Center
+60544: Glen Park
+3639: Haight-Ashbury
+63943: Oceanview
+7377: North Beach
+60548: Civic Center
+60549: Civic Center
+68353: N/A
+3633: Haight-Ashbury
+3630: Lower Haight
+3631: Lower Haight
+60380: Noe Valley
+12199: Mission District
+37405: Richmond District
+60387: South of Market
+68986: Pacific Heights
+62900: Western Addition
+2347: Mission District
+2346: Mission District
+2343: Mission District
+38961: Richmond District
+873: Financial District
+5907: Marina District
+231: Russian Hill
+64884: North Beach
+64737: Polk Gulch
+64880: Nob Hill
+65602: South of Market
+64738: Civic Center
+10931: Richmond District
+69149: Polk Gulch
+69302: Sunnyside
+9444: Sunset District
+57713: Inner Sunset
+64466: Richmond District
+61967: Civic Center
+12285: Mission District
+65425: Inner Sunset
+4469: North Beach
+7207: The Castro
+4464: North Beach
+16441: Excelsior
+4462: Financial District
+1882: Lakeshore
+1880: Sunset District
+1595: Cole Valley
+6914: South of Market
+9283: Inner Sunset
+33413: Alamo Square
+4668: Sunset District
+2124: Pacific Heights
+2127: Marina District
+949: Central Richmond
+4665: Sunset District
+4914: Mission District
+4667: West of Twin Peaks
+36277: The Castro
+4661: South of Market
+36274: N/A
+768: Dogpatch
+57628: Central Richmond
+21807: La Lengua
+9163: South Beach
+6032: Mission Dolores
+1932: Richmond District
+6030: South of Market
+6037: Dolores Heights
+57623: Financial District
+40197: Civic Center
+2659: Bernal Heights
+5170: Bayview
+5177: Western Addition
+67875: Civic Center
+5175: Hayes Valley
+10065: Bayview
+2653: La Lengua
+2652: Western Addition
+5179: Tenderloin
+36876: Dolores Heights
+62548: Lower Haight
+9208: Lakeshore
+132: Financial District
+3414: Bayview
+130: Financial District
+134: Civic Center
+34689: The Castro
+63016: Noe Valley
+67879: South of Market
+37456: Marina District
+36473: Financial District
+36474: South Beach
+68045: Lower Haight
+6327: North of the Panhandle
+71131: Outer Mission
+4868: Hayes Valley
+5927: Excelsior
+6322: Mission District
+1930: Sunset District
+6320: N/A
+63499: North Beach
+4863: Mission District
+2017: Western Addition
+2016: Western Addition
+10668: Marina District
+9684: Polk Gulch
+4864: Mission District
+2012: Western Addition
+18480: Chinatown
+71909: Outer Mission
+33485: Haight-Ashbury
+64881: Bernal Heights
+59717: South of Market
+18606: Western Addition
+10282: Pacific Heights
+58629: Tenderloin
+10280: Civic Center
+34839: Tenderloin
+65829: Tenderloin
+6568: Nob Hill
+3562: Tenderloin
+18805: Cow Hollow
+68430: South of Market
+3561: Financial District
+18800: South of Market
+7253: Lakeshore
+36695: The Castro
+63124: Cow Hollow
+4480: Noe Valley
+4481: Mission Dolores
+4483: Noe Valley
+37580: Bayview
+37581: The Castro
+6567: Bayview
+2902: Polk Gulch
+2907: Inner Richmond
+709: Tenderloin
+2905: Richmond District
+6852: Polk Gulch
+510: Sunset District
+68773: Inner Sunset
+703: Tenderloin
+58710: Hayes Valley
+7138: South of Market
+88: Potrero Hill
+58718: Western Addition
+7130: Chinatown
+7133: Mission District
+81: Richmond District
+38073: Sunset District
+38072: Richmond District
+38070: The Castro
+796: North Beach
+7728: Sunset District
+37633: Central Richmond
+64540: Mission District
+66570: Tenderloin
+37639: Mission District
+5310: North Beach
+33641: West of Twin Peaks
+33315: Lakeshore
+62808: Silver Terrace
+40029: Tenderloin
+1652: South Beach
+71473: Financial District
+68090: North Beach
+71476: West of Twin Peaks
+68721: Potrero Hill
+31799: Hayes Valley
+587: West of Twin Peaks
+68944: Lakeshore
+68945: Lakeshore
+59910: Nob Hill
+580: Bernal Heights
+6584: Haight-Ashbury
+68775: Mission Dolores
+67246: Tenderloin
+64161: Polk Gulch
+8202: West of Twin Peaks
+1632: Bernal Heights
+588: Sunset District
+589: Sunset District
+3151: Chinatown
+63210: Civic Center
+3155: Financial District
+2837: Central Richmond
+2836: North Beach
+33862: Excelsior
+33865: Sunset District
+7628: Bayview
+3211: Sunset District
+68894: Mission Dolores
+65549: Glen Park
+3393: South of Market
+3392: Richmond District
+68890: Excelsior
+3394: South of Market
+3397: South Beach
+65427: Mission Dolores
+62051: Haight-Ashbury
+62056: Mission District
+62057: Richmond District
+1438: Mid-Market
+66475: N/A
+38788: Pacific Heights
+67661: Dogpatch
+39615: Western Addition
+68189: Mission District
+68540: Excelsior
+68541: South of Market
+68544: Richmond District
+4262: Inner Sunset
+23557: Dogpatch
+7205: Mission District
+34161: South of Market
+1341: Dolores Heights
+66536: Lakeshore
+1344: Sunset District
+1345: Polk Gulch
+70823: Marina District
+1347: Cole Valley
+66705: Richmond District
+59289: Central Richmond
+8113: Financial District
+68660: Mission District
+67806: Western Addition
+9873: Civic Center
+7711: Richmond District
+7710: Richmond District
+59041: Civic Center
+1884: Lakeshore
+14431: Excelsior
+68451: South of Market
+8077: Chinatown
+59044: Mission District
+61623: South Beach
+70754: Financial District
+38259: South of Market
+3707: Lower Nob Hill
+61123: South of Market
+28318: North Beach
+38091: South of Market
+1505: Financial District
+67486: Civic Center
+3084: N/A
+1508: Nob Hill
+1509: North of the Panhandle
+3080: Western Addition
+3082: Embarcadero
+61390: South of Market
+61391: South of Market
+66517: Civic Center
+4656: South of Market
+6833: Outer Mission
+34769: Tenderloin
+5053: South of Market
+67936: South of Market
+5891: South of Market
+5892: The Castro
+5893: Excelsior
+5894: Excelsior
+5895: Potrero Hill
+5897: Bayview
+5898: Excelsior
+61436: South Park
+5278: Marina District
+3885: N/A
+34635: Central Richmond
+3881: Cow Hollow
+61016: Visitacion Valley
+830: Outer Mission
+65826: Lower Nob Hill
+71841: Cow Hollow
+3888: Central Richmond
+35962: Western Addition
+7408: Polk Gulch
+4917: Mission District
+66679: Financial District
+7407: South of Market
+70022: Financial District
+4650: Central Richmond
+19082: South of Market
+69606: Outer Mission
+61579: Mission District
+68421: South of Market
+65635: Financial District
+943: The Castro
+39420: Mission District
+68410: Bernal Heights
+67180: Russian Hill
+6628: Central Richmond
+6626: Sunset District
+6625: Sunset District
+6622: Chinatown
+6620: Chinatown
+35565: Tenderloin
+4008: South Beach
+32693: Lower Haight
+59935: Bernal Heights
+65824: Cow Hollow
+32698: Richmond District
+37021: Mission District
+68961: Excelsior
+4006: South of Market
+3971: Bernal Heights
+323: Western Addition
+320: Polk Gulch
+19422: Western Addition
+326: Pacific Heights
+3977: South Beach
+325: Western Addition
+3978: South Beach
+328: Western Addition
+69706: Russian Hill
+39606: Mission District
+66902: Dogpatch
+3621: Mission District
+3623: Mission District
+64653: Financial District
+3626: Mission District
+67394: Financial District
+60256: Fisherman's Wharf
+35415: Embarcadero
+68131: Bayview
+68963: Mission Dolores
+71783: South of Market
+35418: Richmond District
+2331: Mission District
+4716: Cow Hollow
+12768: Bayview
+2334: Mission District
+2335: Mission District
+2336: Polk Gulch
+2337: Mission District
+67833: Mission District
+4718: Pacific Heights
+7641: Sunset District
+64722: Mission District
+64723: Financial District
+7388: South Beach
+1596: Cole Valley
+64726: South of Market
+7646: Mission District
+65383: South of Market
+65382: Inner Sunset
+27350: Mission District
+64945: The Castro
+50: Mission Dolores
+21909: Polk Gulch
+63713: Sunset District
+69403: Mission District
+3711: Financial District
+38898: South of Market
+69153: Mission Dolores
+69150: Lower Nob Hill
+6881: Tenderloin
+5171: Western Addition
+4479: The Castro
+4478: Mission District
+7645: Mission District
+61975: Chinatown
+61976: Embarcadero
+33965: Richmond District
+62939: Tenderloin
+4475: Mission Dolores
+4474: The Castro
+4476: Financial District
+6007: Bayview
+6005: South of Market
+6003: Bayview
+6000: Mission District
+4678: Richmond District
+5150: Mission Dolores
+4900: North of the Panhandle
+5174: Western Addition
+4905: Fillmore District
+2483: Cow Hollow
+4671: Sunset District
+2951: The Castro
+36875: N/A
+35855: South of Market
+2249: Financial District
+2244: Financial District
+2245: Financial District
+64092: Western Addition
+2240: Financial District
+68632: South of Market
+57630: Cow Hollow
+2243: Financial District
+62530: Polk Gulch
+37231: Chinatown
+7390: Financial District
+993: Outer Mission
+7392: Richmond District
+63824: N/A
+24198: Polk Gulch
+5144: North of the Panhandle
+7433: Potrero Hill
+999: Mission District
+2469: Russian Hill
+69115: Polk Gulch
+36861: Hayes Valley
+64076: Mission District
+121: Financial District
+3403: Lower Nob Hill
+3405: South Beach
+125: Financial District
+126: Russian Hill
+7534: Financial District
+3409: Embarcadero
+60029: South of Market
+7537: Central Richmond
+63000: Noe Valley
+64079: Financial District
+4875: Mission District
+4874: Mission District
+7087: Mission District
+4873: Mission Dolores
+33124: North Beach
+33125: Financial District
+64384: South of Market
+2798: Sunset District
+2799: Tenderloin
+10615: Marina District
+63487: Bernal Heights
+66321: North Beach
+2060: Marina District
+2061: Marina District
+63488: Excelsior
+2063: Cow Hollow
+2797: Western Addition
+2066: Polk Gulch
+59709: The Castro
+71649: Mission District
+65902: Civic Center
+67786: Hayes Valley
+58659: Financial District
+58879: North Beach
+34828: La Lengua
+10438: Lower Nob Hill
+62990: North Beach
+7383: Sunset District
+62445: Civic Center
+10433: Lower Nob Hill
+62176: Bayview
+10127: South of Market
+21583: Lower Nob Hill
+60899: Cow Hollow
+33014: Western Addition
+18870: Tenderloin
+7245: Ingleside
+7381: The Castro
+68159: West of Twin Peaks
+33011: Financial District
+33012: Financial District
+5090: Sunset District
+36687: Mission District
+36685: Mission District
+3571: Financial District
+5096: Outer Mission
+68152: Western Addition
+13386: South of Market
+2667: Central Richmond
+2664: Noe Valley
+36048: South Beach
+4492: N/A
+67235: Richmond District
+62849: Financial District
+37667: North Beach
+5847: Lower Haight
+36512: South Beach
+36513: South Beach
+66328: Lakeshore
+6825: Central Richmond
+71806: Mission District
+15738: South Beach
+8005: N/A
+2932: North Beach
+2933: North Beach
+33272: Lakeshore
+18616: South Beach
+59986: North of the Panhandle
+7111: Lower Haight
+5325: South of Market
+34910: Tenderloin
+10540: Embarcadero
+941: Bayview
+18581: South of Market
+18580: South of Market
+8948: Tenderloin
+33780: Marina District
+67012: Western Addition
+1641: Noe Valley
+63223: South Beach
+1649: South Beach
+29304: Marina District
+37482: West of Twin Peaks
+30478: South of Market
+6864: Russian Hill
+61135: Sunset District
+14285: Financial District
+6548: Tenderloin
+18901: Financial District
+65906: Bernal Heights
+5889: Mission District
+63763: Mission District
+66922: Civic Center
+29948: South of Market
+67357: Cow Hollow
+573: South Beach
+60469: Tenderloin
+34354: Lower Nob Hill
+34352: Lower Nob Hill
+18728: Excelsior
+67237: Mission District
+71292: Embarcadero
+62067: Potrero Hill
+65181: Dolores Heights
+2808: Oceanview
+2809: The Castro
+12968: Excelsior
+7656: North of the Panhandle
+6177: Chinatown
+3167: Sunset District
+3165: Central Richmond
+18298: Tenderloin
+3160: Financial District
+3161: North Beach
+7096: Western Addition
+7097: Western Addition
+5430: Civic Center
+7095: Lower Haight
+5437: Chinatown
+1427: Western Addition
+1426: Outer Mission
+3365: Financial District
+66925: South of Market
+4983: Tenderloin
+34222: N/A
+34220: North Beach
+34221: N/A
+67982: N/A
+37151: Financial District
+67124: Civic Center
+37152: Russian Hill
+7387: Excelsior
+1207: Civic Center
+67123: Mission Dolores
+70058: Bayview
+13962: Pacific Heights
+69574: Potrero Hill
+1359: Western Addition
+34179: Financial District
+469: North Beach
+468: North Beach
+13965: Tenderloin
+5110: N/A
+1352: The Castro
+1351: Tenderloin
+1350: Richmond District
+463: Russian Hill
+1354: The Castro
+9869: Sunset District
+18120: South Beach
+18126: Financial District
+5552: Lakeshore
+6950: Chinatown
+67359: Marina District
+4860: Lakeshore
+65831: Richmond District
+66656: Lower Nob Hill
+62943: Polk Gulch
+38247: Lakeshore
+14429: Alamo Square
+6948: Financial District
+66637: Western Addition
+6775: Central Richmond
+1515: South Beach
+34591: Bayview
+1517: South Beach
+1516: South Beach
+1511: Outer Mission
+65830: North Beach
+4753: North Beach
+68401: Sunnyside
+35317: The Castro
+64859: Richmond District
+5883: North Beach
+34577: The Castro
+5881: Financial District
+5880: North Beach
+5886: Polk Gulch
+5885: Nob Hill
+5884: Chinatown
+4859: Oceanview
+13814: South of Market
+5888: Mission District
+6965: Chinatown
+39205: Noe Valley
+65114: Mission District
+6553: Mission District
+70562: Polk Gulch
+6558: Western Addition
+3185: Sunset District
+3186: Richmond District
+38339: Tenderloin
+488: North Beach
+3183: Inner Sunset
+7471: Embarcadero
+24431: South Beach
+38330: Mission Dolores
+3189: Central Richmond
+35771: N/A
+65856: South of Market
+35221: Financial District
+35220: Lower Nob Hill
+35222: North Beach
+19094: Laurel Heights
+16047: Richmond District
+16513: Mission District
+64706: Polk Gulch
+32200: La Lengua
+26343: Tenderloin
+26340: Russian Hill
+26341: Western Addition
+35790: South of Market
+65676: Civic Center
+26348: Western Addition
+985: Sunset District
+66211: Dogpatch
+32682: South of Market
+32683: South of Market
+4019: Chinatown
+6893: Tenderloin
+32684: South of Market
+32685: South of Market
+4012: South of Market
+4011: South Beach
+66198: Dogpatch
+7651: North of the Panhandle
+4016: Crocker-Amazon
+4015: South Beach
+39113: South of Market
+65139: Chinatown
+3989: Lower Nob Hill
+7502: South Beach
+63619: Civic Center
+65130: Bernal Heights
+39119: Richmond District
+3987: Potrero Hill
+3980: South of Market
+741: West of Twin Peaks
+3982: South of Market
+65137: Outer Mission
+65468: Mission Dolores
+65712: Financial District
+65245: Bayview
+65240: Hayes Valley
+65241: Dogpatch
+60561: Lower Nob Hill
+64661: South Beach
+64660: Haight-Ashbury
+64667: Mission District
+3612: Presidio Heights
+65248: South Beach
+5796: Balboa Terrace
+35423: Mission District
+61187: Bayview
+3613: Mission District
+61180: Tenderloin
+35425: St. Francis
+70685: Excelsior
+69291: Glen Park
+2323: Haight-Ashbury
+4706: Cow Hollow
+4705: Pacific Heights
+70687: Sunset District
+4703: Cow Hollow
+2326: Mission District
+2325: Haight-Ashbury
+4700: Western Addition
+69387: Tenderloin
+69383: Russian Hill
+57732: Laurel Heights
+484: North Beach
+4708: Cow Hollow
+65624: Cow Hollow
+27167: The Castro
+38139: Treasure Island
+6968: Financial District
+65622: Embarcadero
+281: Marina District
+283: Tenderloin
+16286: Financial District
+286: Tenderloin
+60616: Mission District
+60484: West of Twin Peaks
+68433: Chinatown
+3769: Tenderloin
+38885: North of the Panhandle
+38882: Financial District
+63084: Richmond District
+36213: N/A
+260: Outer Mission
+267: Marina District
+36214: North Beach
+36216: North Beach
+3566: Richmond District
+268: Marina District
+17647: Inner Sunset
+6010: Russian Hill
+6012: Sunset District
+6015: North Beach
+7480: Russian Hill
+6016: Polk Gulch
+4642: Richmond District
+1296: Mission District
+482: North Beach
+2495: Pacific Heights
+2497: Marina District
+69769: Westwood Park
+63121: North Beach
+38984: Central Richmond
+1566: North Beach
+63926: South of Market
+69761: Oceanview
+2256: Richmond District
+57601: North Beach
+2252: Financial District
+7375: Bayview
+2475: Noe Valley
+62521: Marina District
+62526: Richmond District
+2472: Western Addition
+66800: Tenderloin
+39706: Central Richmond
+36850: Central Richmond
+63857: Mission Dolores
+5156: Mission District
+64041: Pacific Heights
+116: Financial District
+253: Outer Mission
+39937: Civic Center
+39936: Lower Nob Hill
+39528: South of Market
+2785: Visitacion Valley
+4801: Excelsior
+7482: Financial District
+4638: Sunset District
+4804: Excelsior
+2780: Financial District
+4806: Excelsior
+36224: Mission District
+71563: South of Market
+2788: Russian Hill
+36451: N/A
+64361: Richmond District
+8882: Embarcadero
+64917: Cow Hollow
+9463: Embarcadero
+9462: South of Market
+6305: Chinatown
+2072: Russian Hill
+2070: Russian Hill
+2077: Russian Hill
+2076: Russian Hill
+6302: Chinatown
+62298: Financial District
+10135: Western Addition
+8091: N/A
+33468: Hayes Valley
+58861: Marina District
+33467: South of Market
+70258: Financial District
+18462: South of Market
+71385: Ingleside
+27986: N/A
+64581: South Beach
+17736: Richmond District
+39687: The Castro
+827: Excelsior
+68386: Western Addition
+63108: Bayview
+826: Richmond District
+70838: West of Twin Peaks
+7277: Richmond District
+38530: N/A
+68149: North Beach
+33069: South Beach
+68147: N/A
+37038: Potrero Hill
+3503: Financial District
+3504: Financial District
+5085: Tenderloin
+5084: Tenderloin
+62853: Polk Gulch
+64141: Polk Gulch
+9797: Anza Vista
+9796: Tenderloin
+2676: Noe Valley
+36523: Marina District
+62859: Financial District
+67427: Polk Gulch
+2929: Lower Nob Hill
+2928: Lower Nob Hill
+40193: The Castro
+2920: Lower Nob Hill
+2922: Lower Nob Hill
+2925: N/A
+2924: N/A
+2927: Lower Nob Hill
+2926: Lower Nob Hill
+66584: Excelsior
+7806: Western Addition
+29312: Haight-Ashbury
+65896: South of Market
+65659: Western Addition
+62674: Tenderloin
+62675: Fisherman's Wharf
+1631: Noe Valley
+3216: Sunset District
+3217: Sunset District
+3210: North Beach
+1983: Central Richmond
+1636: Lower Haight
+67005: Bayview
+62941: Tenderloin
+3218: Richmond District
+1989: N/A
+18268: West of Twin Peaks
+8823: Embarcadero
+71657: Inner Sunset
+70499: Mission District
+66990: Central Richmond
+13041: N/A
+70494: Mission Dolores
+480: North Beach
+3578: Tenderloin
+33516: Financial District
+58612: Golden Gate Park
+2810: Tenderloin
+2813: The Castro
+18047: Mission District
+29956: Financial District
+562: Mission Dolores
+68967: N/A
+15094: Mission District
+2818: South Beach
+29950: North Beach
+567: Embarcadero
+17812: Financial District
+62072: Central Richmond
+59336: The Castro
+70921: Lower Nob Hill
+61155: Chinatown
+7488: Richmond District
+7644: Oceanview
+7649: Mission District
+70929: Sunset District
+3174: Sunset District
+12970: Mission District
+5639: South Beach
+68560: Inner Sunset
+62277: Civic Center
+6899: Tenderloin
+7085: Mission District
+1188: Richmond District
+1186: Pacific Heights
+69615: Financial District
+3375: Tenderloin
+3374: Tenderloin
+3373: Tenderloin
+68366: Mission District
+727: Western Addition
+7033: Sunset District
+68362: South of Market
+68360: Lower Nob Hill
+59599: Lower Nob Hill
+1747: Polk Gulch
+1741: Lower Nob Hill
+1742: Civic Center
+729: Marina District
+67356: Fillmore District
+6494: Nob Hill
+7411: South of Market
+4249: Lower Haight
+67828: Richmond District
+4244: Mission District
+4242: Mission District
+4243: Mission District
+4240: Mission District
+6465: Lakeshore
+39327: Russian Hill
+5632: South Beach
+5994: Fillmore District
+18136: La Lengua
+65103: Lakeshore
+70970: Haight-Ashbury
+6944: Chinatown
+59028: Sunset District
+70971: Central Richmond
+48: Inner Sunset
+473: Russian Hill
+59021: Excelsior
+7135: Mission Dolores
+59023: Excelsior
+45: Bernal Heights
+59025: Financial District
+470: North Beach
+66191: Dolores Heights
+24534: South of Market
+1568: Russian Hill
+5997: Lakeshore
+62209: Haight-Ashbury
+28209: The Castro
+70313: Bernal Heights
+1564: Lower Nob Hill
+1565: Lower Nob Hill
+1294: Dolores Heights
+1567: Western Addition
+5252: Bayview
+66173: Noe Valley
+24024: Western Addition
+63755: North Beach
+34787: Central Richmond
+28978: Cow Hollow
+795: North Beach
+64612: Excelsior
+67067: North Beach
+66992: Western Addition
+7107: Haight-Ashbury
+65898: Lower Nob Hill
+8004: Bayview
+15279: Outer Mission
+65895: Potrero Hill
+67917: Financial District
+65893: Sunset District
+61959: North Beach
+66999: Marina District
+68644: Mission District
+479: North Beach
+59331: Sunnyside
+39630: Excelsior
+5634: South Beach
+5635: South Beach
+5636: South Beach
+67063: Lower Nob Hill
+5630: South Beach
+5631: South Beach
+28193: Mid-Market
+5633: South Beach
+1366: Mission District
+3196: Sunset District
+10131: Sunset District
+34144: Excelsior
+34143: South Beach
+477: Russian Hill
+3190: Sunset District
+28976: La Lengua
+66694: Tenderloin
+28206: N/A
+7467: South Beach
+1368: Financial District
+4445: Noe Valley
