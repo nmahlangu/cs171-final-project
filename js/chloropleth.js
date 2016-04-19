@@ -78,7 +78,6 @@ Chloropleth.prototype.initVis = function() {
       	fillOpacity: 0.6,
         onEachFeature: function (feature, layer) {
         	layer.on('mouseover', function(e) {
-        		// TODO: update div with all inspections / violations
         		var html = "";
 
         		// header
@@ -91,7 +90,6 @@ Chloropleth.prototype.initVis = function() {
         		// inspections
         		var inspections = vis.getAllInspections(feature.properties.name);
         		inspections.forEach(function(d) {
-        			// TODO: 
         			html += "<tr>";
         			html += "<td>" + d["name"] + "</td>";
         			html += "<td>" + d["Score"] + "</td>";
@@ -175,7 +173,36 @@ Chloropleth.prototype.updateChloropleth = function() {
       	return {color: colorShade};
       },
       weight: 3,
-      fillOpacity: 0.6
+      fillOpacity: 0.6,
+      /** TODO: make it alternate between inspections and violations in final version **/
+      onEachFeature: function (feature, layer) {
+        layer.on('mouseover', function(e) {
+          // TODO: update div with all inspections / violations
+          var html = "";
+
+          // header
+          var div = $("#chloropleth-tooltip-box");
+          html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
+
+          // start table
+          html += "<table>";
+
+          // inspections
+          var inspections = vis.getAllInspections(feature.properties.name);
+          inspections.forEach(function(d) {
+            // TODO: 
+            html += "<tr>";
+            html += "<td>" + d["name"] + "</td>";
+            html += "<td>" + d["Score"] + "</td>";
+            html += "</tr>";
+          });
+
+          // close table
+          html += "</table>";
+
+          div.html(html);
+        });
+      }
     }).addTo(vis.map);
 
     // remove previous legend
