@@ -101,38 +101,22 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
   // change table info on click
   layer.on('click', function(e) {
-    var html = "";
-
     // update neighborhood being shown
-    var neighbodhoodDiv = $("#neighborhood_being_show");
-    neighbodhoodDiv.html(feature.properties.name);
+    $("#neighborhood_being_show").html(feature.properties.name);
 
-    // header
-    var div = $("#chloropleth-tooltip-box");
-    // html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
-
-    // start table
-    html += "<table class='CSSTableGenerator'>";
+    // create new table headers
+    var html = "";
+    html += "<table class='table table-striped table-hover'>";
 
     switch(dropdownValue) {
-      // add inspection data
       case "inspections":
+        html += "<thead>"
         html += "<tr>";
-        html += "<td style='width: 280px'>" + "Restaurant Name" + "</td>";
-        html += "<td style='width: 280px'>" + "Date" + "</td>";
-        html += "<td style='width: 280px'>" + "Inspection Type" + "</td>";
-        html += "<td >" + "Inspection Score" + "</td>";
+        html += "<th style='width: 280px'>" + "Restaurant" + "</td>";
+        html += "<th style='width: 280px'>" + "Date" + "</td>";
+        html += "<th >" + "Score" + "</td>";
         html += "</tr>";
-
-        var inspections = vis.getAllInspections(feature.properties.name);
-        inspections.forEach(function(d) {
-          html += "<tr>";
-          html += "<td>" + d["name"] + "</td>";
-          html += "<td>" + d["date"] + "</td>";
-          html += "<td>" + d["type"] + "</td>";
-          html += "<td>" + d["Score"] + "</td>";
-          html += "</tr>";
-        });
+        html += "</thead>";
         break;
 
       // add violation data
@@ -141,7 +125,36 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
         html += "<td>" + "Restaurant Name" + "</td>";
         html += "<td>" + "Violation Risk Level" + "</td>";
         html += "</tr>";
+        break;
+    }
 
+    // close table
+    html += "</table>";
+
+    // update table headers
+    $("#chloropleth-tooltip-header").html(html);
+
+    // create new table body
+    html = "";
+    html += "<table class='table table-striped table-hover'>";
+
+    switch(dropdownValue) {
+      // add inspection data
+      case "inspections":
+        var inspections = vis.getAllInspections(feature.properties.name);
+        html += "</tbody>";
+        inspections.forEach(function(d) {
+          html += "<tr>";
+          html += "<td>" + d["name"] + "</td>";
+          html += "<td>" + d["date"] + "</td>";
+          html += "<td>" + d["Score"] + "</td>";
+          html += "</tr>";
+        });
+        html += "</tbody>";
+        break;
+
+      // add violation data
+      case "violations":
         var violations = vis.getAllViolations(feature.properties.name);
         violations.forEach(function(d) {
           html += "<tr>";
@@ -154,8 +167,8 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
     // close table
     html += "</table>";
 
-    // update displayed html
-    div.html(html);
+    // update table body
+    $("#chloropleth-tooltip-box").html(html);
   });
 }
 

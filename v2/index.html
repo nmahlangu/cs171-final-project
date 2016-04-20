@@ -69,8 +69,9 @@
 				</li> -->
 				<!-- <li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Free Download</span></a>
 				</li> -->
-				<li><a href="https://github.com/nmahlangu/cs171-final-project" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Github</span></a>
-				</li>
+
+				<!-- <li><a href="https://github.com/nmahlangu/cs171-final-project" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Github</span></a>
+				</li> -->
 			</ul>
 		</div>    
         <!-- /.container -->
@@ -208,14 +209,16 @@
 		<div class="container">
 
 			<div class="row">
-				<!-- chloropleth information box -->
-				<div class="col-sm-4 wow fadeInLeftBig"  data-animation-delay="200">   
+
+				<div class="col-sm-4 wow fadeInLeftBig"  data-animation-delay="200"> 
+					<!-- headers -->  
                     <h3 class="section-heading">Chloropleth</h3>
                     <p class="lead">Use the drop down menu below to toggle between inspection and violation data. 
 					</p>
 
-				    <div class="form-group">
-				    	<div class="row" >
+					<!-- drop down menu -->
+				    <div class="row" >
+				    	<div class="form-group">
 				    		<label for="select" class="col-lg-4 control-label">Map Filter:</label>
 					    	<div class="col-lg-6">
 						        <select class="form-control" id="chloropleth-dropdown">
@@ -227,9 +230,20 @@
 					        </div>
 				        </div>
 				    </div>
+
+				    <!-- tooltip table headers -->
+				    <div id="chloropleth-tooltip-header">
+				    	
+				    </div>
+
+					<!-- tooltip box -->
+					<div id="chloropleth-tooltip-box">
+					</div>
 				</div>
-				<!-- chloropleth visualization -->
+
+
 				<div class="col-sm-8 pull-right wow fadeInRightBig">
+					<!-- chloropleth visualization -->
 					<div id="chloropleth">
 					</div>
 				</div>
