@@ -110,8 +110,9 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
     $("#neighborhood_being_show").html(feature.properties.name);
 
     // create new table headers
+    // TODO: take all CSS shit and put it in to CSS file
     var html = "";
-    html += "<table class='table table-bordered' style='margin-bottom: 0px; table-layout: fixed'>";
+    html += "<table id='chloropleth_table_header' class='table table-bordered'>";
 
     switch(dropdownValue) {
       case "inspections":
