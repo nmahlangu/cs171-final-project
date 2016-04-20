@@ -98,8 +98,13 @@ Chloropleth.prototype.setColorScaleDomain = function(dropdownValue) {
 Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue) {
   var vis = this;
 
-  layer.on('mouseover', function(e) {
+  // change table info on click
+  layer.on('click', function(e) {
     var html = "";
+
+    // update neighborhood being shown
+    var neighbodhoodDiv = $("#neighborhood_being_show");
+    neighbodhoodDiv.html(feature.properties.name);
 
     // header
     var div = $("#chloropleth-tooltip-box");
@@ -107,7 +112,6 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
     // start table
     html += "<table class='CSSTableGenerator'>";
-
 
     switch(dropdownValue) {
       // add inspection data
