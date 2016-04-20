@@ -85,6 +85,7 @@ Chloropleth.prototype.setColorScaleDomain = function(dropdownValue) {
     }
   }, []);
   colorScaleDomain = colorScaleDomain.sort(function(a,b) { return a - b; });
+  colorScaleDomain = colorScaleDomain.filter(function(d) { return d != 0; });
   vis.colorScale
     .domain([colorScaleDomain[0], colorScaleDomain[colorScaleDomain.length - 1]]);
 }
