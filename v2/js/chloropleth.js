@@ -101,20 +101,25 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
   // change table info on click
   layer.on('click', function(e) {
+
+    var restaurantColWidth = 160;
+    var dateColWidth = 100;
+    var scoreWidth = 60;
+
     // update neighborhood being shown
     $("#neighborhood_being_show").html(feature.properties.name);
 
     // create new table headers
     var html = "";
-    html += "<table class='table table-striped table-hover'>";
+    html += "<table class='table table-bordered' style='margin-bottom: 0px; table-layout: fixed'>";
 
     switch(dropdownValue) {
       case "inspections":
-        html += "<thead>"
+        html += "<thead class='thead-inverse'>"
         html += "<tr>";
-        html += "<th style='width: 280px'>" + "Restaurant" + "</td>";
-        html += "<th style='width: 280px'>" + "Date" + "</td>";
-        html += "<th >" + "Score" + "</td>";
+        html += "<th style='width: " + restaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
+        html += "<th style='width: " + dateColWidth + "px; text-align: center'>" + "Date" + "</td>";
+        html += "<th style='width: " + scoreWidth + "px; text-align: center'>" + "Score" + "</td>";
         html += "</tr>";
         html += "</thead>";
         break;
@@ -136,7 +141,7 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
     // create new table body
     html = "";
-    html += "<table class='table table-striped table-hover'>";
+    html += "<table class='table table-striped table-bordered table-hover' style='table-layout: fixed'>";
 
     switch(dropdownValue) {
       // add inspection data
@@ -145,9 +150,12 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
         html += "</tbody>";
         inspections.forEach(function(d) {
           html += "<tr>";
-          html += "<td>" + d["name"] + "</td>";
-          html += "<td>" + d["date"] + "</td>";
-          html += "<td>" + d["Score"] + "</td>";
+          html += "<td style='width: " + restaurantColWidth + "px'>" + d["name"] + "</td>";
+          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+          var day = (d["date"] % 100).toString()
+          var year = Math.floor((d["date"] / 10000)).toString();
+          html += "<td style='width: " + dateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+          html += "<td style='width: " + scoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
           html += "</tr>";
         });
         html += "</tbody>";
