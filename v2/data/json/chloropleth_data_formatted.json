@@ -1,0 +1,470 @@
+{
+    "Alamo Square": {
+        "avg_inspection_score": 88.16666666666667,
+        "avg_violation_score": 4.857142857142857
+    },
+    "Anza Vista": {
+        "avg_inspection_score": 94.0,
+        "avg_violation_score": 1.8
+    },
+    "Apparel City": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Aquatic Park / Ft. Mason": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Ashbury Heights": {
+        "avg_inspection_score": 90.0,
+        "avg_violation_score": 4.5
+    },
+    "Balboa Terrace": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Bayview": {
+        "avg_inspection_score": 88.59615384615384,
+        "avg_violation_score": 5.455696202531645
+    },
+    "Bernal Heights": {
+        "avg_inspection_score": 89.91891891891892,
+        "avg_violation_score": 6.22
+    },
+    "Bret Harte": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Buena Vista": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Candlestick Point SRA": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Castro": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Cathedral Hill": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Cayuga": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Central Waterfront": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Chinatown": {
+        "avg_inspection_score": 75.16666666666667,
+        "avg_violation_score": 11.294871794871796
+    },
+    "Civic Center": {
+        "avg_inspection_score": 84.9074074074074,
+        "avg_violation_score": 6.597014925373134
+    },
+    "Clarendon Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Cole Valley": {
+        "avg_inspection_score": 83.42857142857143,
+        "avg_violation_score": 6.384615384615385
+    },
+    "Corona Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Cow Hollow": {
+        "avg_inspection_score": 86.77142857142857,
+        "avg_violation_score": 8.511111111111111
+    },
+    "Crocker Amazon": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Diamond Heights": {
+        "avg_inspection_score": 79.5,
+        "avg_violation_score": 5.666666666666667
+    },
+    "Dogpatch": {
+        "avg_inspection_score": 91.84615384615384,
+        "avg_violation_score": 4.277777777777778
+    },
+    "Dolores Heights": {
+        "avg_inspection_score": 85.57142857142857,
+        "avg_violation_score": 9.166666666666666
+    },
+    "Downtown / Union Square": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Duboce Triangle": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Eureka Valley": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Excelsior": {
+        "avg_inspection_score": 88.525,
+        "avg_violation_score": 6.42
+    },
+    "Fairmount": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Financial District": {
+        "avg_inspection_score": 86.9950495049505,
+        "avg_violation_score": 5.781376518218623
+    },
+    "Fishermans Wharf": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Forest Hill": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Forest Knolls": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Glen Park": {
+        "avg_inspection_score": 91.15384615384616,
+        "avg_violation_score": 4.0625
+    },
+    "Golden Gate Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Golden Gate Park": {
+        "avg_inspection_score": 92.5,
+        "avg_violation_score": 3.0
+    },
+    "Haight Ashbury": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Hayes Valley": {
+        "avg_inspection_score": 90.47058823529412,
+        "avg_violation_score": 4.636363636363637
+    },
+    "Holly Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Hunters Point": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "India Basin": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Ingleside": {
+        "avg_inspection_score": 89.0,
+        "avg_violation_score": 2.4285714285714284
+    },
+    "Ingleside Terraces": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Inner Richmond": {
+        "avg_inspection_score": 85.0,
+        "avg_violation_score": 7.333333333333333
+    },
+    "Inner Sunset": {
+        "avg_inspection_score": 82.81818181818181,
+        "avg_violation_score": 8.428571428571429
+    },
+    "Japantown": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Laguna Honda": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Lake Street": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Lakeshore": {
+        "avg_inspection_score": 91.16666666666667,
+        "avg_violation_score": 4.596153846153846
+    },
+    "Laurel Heights / Jordan Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Lincoln Park / Ft. Miley": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Little Hollywood": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Lone Mountain": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Lower Haight": {
+        "avg_inspection_score": 84.9,
+        "avg_violation_score": 6.153846153846154
+    },
+    "Lower Nob Hill": {
+        "avg_inspection_score": 89.84057971014492,
+        "avg_violation_score": 4.8352941176470585
+    },
+    "Lower Pacific Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Marina": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "McLaren Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Merced Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Merced Manor": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Midtown Terrace": {
+        "avg_inspection_score": 90.0,
+        "avg_violation_score": 5.5
+    },
+    "Mint Hill": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Miraloma Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Mission": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Mission Bay": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Mission Dolores": {
+        "avg_inspection_score": 90.6938775510204,
+        "avg_violation_score": 4.753846153846154
+    },
+    "Mission Terrace": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Monterey Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Mt. Davidson Manor": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Nob Hill": {
+        "avg_inspection_score": 86.5,
+        "avg_violation_score": 6.7368421052631575
+    },
+    "Noe Valley": {
+        "avg_inspection_score": 88.28125,
+        "avg_violation_score": 7.825
+    },
+    "North Beach": {
+        "avg_inspection_score": 85.63106796116504,
+        "avg_violation_score": 6.5210084033613445
+    },
+    "Northern Waterfront": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Oceanview": {
+        "avg_inspection_score": 95.85714285714286,
+        "avg_violation_score": 2.7777777777777777
+    },
+    "Outer Mission": {
+        "avg_inspection_score": 87.22,
+        "avg_violation_score": 7.982142857142857
+    },
+    "Outer Richmond": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Outer Sunset": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Pacific Heights": {
+        "avg_inspection_score": 86.6,
+        "avg_violation_score": 6.28125
+    },
+    "Panhandle": {
+        "avg_inspection_score": 88.5,
+        "avg_violation_score": 7.0
+    },
+    "Parkmerced": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Parkside": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Parnassus Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Peralta Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Polk Gulch": {
+        "avg_inspection_score": 84.84444444444445,
+        "avg_violation_score": 6.794117647058823
+    },
+    "Portola": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Potrero Hill": {
+        "avg_inspection_score": 88.78571428571429,
+        "avg_violation_score": 6.205882352941177
+    },
+    "Presidio Heights": {
+        "avg_inspection_score": 89.0,
+        "avg_violation_score": 5.333333333333333
+    },
+    "Presidio National Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Presidio Terrace": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Produce Market": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Rincon Hill": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Russian Hill": {
+        "avg_inspection_score": 80.24074074074075,
+        "avg_violation_score": 11.205479452054794
+    },
+    "Seacliff": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Sherwood Forest": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Showplace Square": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Silver Terrace": {
+        "avg_inspection_score": 90.5,
+        "avg_violation_score": 7.2
+    },
+    "South Beach": {
+        "avg_inspection_score": 90.02255639097744,
+        "avg_violation_score": 4.217105263157895
+    },
+    "South of Market": {
+        "avg_inspection_score": 86.30285714285715,
+        "avg_violation_score": 6.369158878504673
+    },
+    "St. Francis Wood": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "St. Marys Park": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Stonestown": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Sunnydale": {
+        "avg_inspection_score": 81.0,
+        "avg_violation_score": 13.0
+    },
+    "Sunnyside": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0.0
+    },
+    "Sutro Heights": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Telegraph Hill": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Tenderloin": {
+        "avg_inspection_score": 81.86516853932584,
+        "avg_violation_score": 8.317829457364342
+    },
+    "Treasure Island": {
+        "avg_inspection_score": 90.0,
+        "avg_violation_score": 4.0
+    },
+    "Union Street": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "University Mound": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Upper Market": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Visitacion Valley": {
+        "avg_inspection_score": 87.46153846153847,
+        "avg_violation_score": 6.5
+    },
+    "West Portal": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Western Addition": {
+        "avg_inspection_score": 87.09708737864078,
+        "avg_violation_score": 6.715447154471545
+    },
+    "Westwood Highlands": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    },
+    "Westwood Park": {
+        "avg_inspection_score": 92.0,
+        "avg_violation_score": 7.25
+    },
+    "Yerba Buena Island": {
+        "avg_inspection_score": 0,
+        "avg_violation_score": 0
+    }
+}

@@ -23,6 +23,10 @@
 	
     <!-- Custom CSS-->
     <link href="css/general.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+
+    <!-- Leaflet -->
+    <link href="css/leaflet.css" rel="stylesheet">
 	
 	 <!-- Owl-Carousel -->
     <link href="css/custom.css" rel="stylesheet">
@@ -99,7 +103,7 @@
 					<li class="menuItem"><a href="#credits">Credits</a></li>
 					<li class="menuItem"><a href="#contact">Contact</a></li> -->
 					<li class="menuItem"><a href="#whatis">What is it?</a></li> 
-					<li class="menuItem"><a href="#chloropleth">Chloropleth</a></li>
+					<li class="menuItem"><a href="#chloropleth-section">Chloropleth</a></li>
 					<!-- <li class="menuItem"><a href="#animation">Animation</a></li>
 					<li class="menuItem"><a href="#heatmap">HeatMap</a></li> -->
 					<li class="menuItem"><a href="#useit">Use It</a></li>
@@ -199,9 +203,38 @@
 	</div>
 
 	<!-- *********************************************** CHLOROPLETH ***********************************************-->
-	<div id="chloropleth" class="content-section-a">
+	<div id="chloropleth-section" class="content-section-a">
 		
 		<div class="container">
+
+			<div class="row">
+				<!-- chloropleth information box -->
+				<div class="col-sm-4 wow fadeInLeftBig"  data-animation-delay="200">   
+                    <h3 class="section-heading">Chloropleth</h3>
+                    <p class="lead">Use the drop down menu below to toggle between the inspection and violation data 
+					</p>
+
+				    <div class="form-group">
+				    	<div class="row" >
+				    		<label for="select" class="col-lg-4 control-label">Map Filter:</label>
+					    	<div class="col-lg-6">
+						        <select class="form-control" id="chloropleth-dropdown">
+					              <option value="inspections">Inspections</option>
+					              <option value="violations">Violations</option>
+						        </select>
+					        </div>
+					        <div class="col-lg-2">
+					        </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- chloropleth visualization -->
+				<div class="col-sm-8 pull-right wow fadeInRightBig">
+					<div id="chloropleth">
+					</div>
+				</div>
+
+			</div>
 
 		</div>
 
@@ -564,11 +597,26 @@
       </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- JavaScript Libraries -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/colorbrewer.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/leaflet.js"></script>
+	<script src="js/queue.min.js"></script>
+	<script src="js/topojson.js"></script>
+
+	<!-- Custom JavaScript -->
+	<script src="js/chloropleth.js"></script>
+	<!-- TODO: only comment in when using -->
+	<!-- <script src="js/heatMap.js"></script> -->
+	<!-- <script src="js/truckRoute.js"></script> -->
+
+	<!-- Load data, create visualization -->
+	<script src="js/main.js"></script>
+
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
 	<script type="text/javascript">
