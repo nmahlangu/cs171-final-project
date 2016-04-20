@@ -103,18 +103,28 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
     // header
     var div = $("#chloropleth-tooltip-box");
-    html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
+    // html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
 
     // start table
-    html += "<table>";
+    html += "<table class='CSSTableGenerator'>";
+
 
     switch(dropdownValue) {
       // add inspection data
       case "inspections":
+        html += "<tr>";
+        html += "<td style='width: 280px'>" + "Restaurant Name" + "</td>";
+        html += "<td style='width: 280px'>" + "Date" + "</td>";
+        html += "<td style='width: 280px'>" + "Inspection Type" + "</td>";
+        html += "<td >" + "Inspection Score" + "</td>";
+        html += "</tr>";
+
         var inspections = vis.getAllInspections(feature.properties.name);
         inspections.forEach(function(d) {
           html += "<tr>";
           html += "<td>" + d["name"] + "</td>";
+          html += "<td>" + d["date"] + "</td>";
+          html += "<td>" + d["type"] + "</td>";
           html += "<td>" + d["Score"] + "</td>";
           html += "</tr>";
         });
@@ -122,6 +132,11 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
       // add violation data
       case "violations":
+        html += "<tr>";
+        html += "<td>" + "Restaurant Name" + "</td>";
+        html += "<td>" + "Violation Risk Level" + "</td>";
+        html += "</tr>";
+
         var violations = vis.getAllViolations(feature.properties.name);
         violations.forEach(function(d) {
           html += "<tr>";
