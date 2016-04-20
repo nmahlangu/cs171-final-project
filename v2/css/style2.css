@@ -1,9 +1,9 @@
 
 
-body {
+/*body {*/
   /*font-family: 'Roboto', sans-serif;*/
-  font-family: "Georgia";
-}
+  /*font-family: "Georgia";*/
+/*}*/
 
 h1 {
   font-weight: 100;
@@ -90,7 +90,8 @@ h1 .sub-headline {
   background-color: #34495E;
   margin-bottom: 0px;
   table-layout: fixed;
-  font-weight: 100;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 /****************************** Animation ******************************/

@@ -102,35 +102,43 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
   // change table info on click
   layer.on('click', function(e) {
 
-    var restaurantColWidth = 160;
-    var dateColWidth = 100;
-    var scoreWidth = 60;
+    // inspection data variables
+    var inspecRestaurantColWidth = 160;
+    var inspecDateColWidth = 100;
+    var inspecScoreWidth = 60;
+
+    // violation data variables
+    var vioRestaurantColWidth = 100;
+    var vioDateColWidth = 100;
+    var vioLevelColWidth = 100;
 
     // update neighborhood being shown
     $("#neighborhood_being_show").html(feature.properties.name);
 
     // create new table headers
-    // TODO: take all CSS shit and put it in to CSS file
     var html = "";
     html += "<table id='chloropleth_table_header' class='table table-bordered'>";
 
     switch(dropdownValue) {
       case "inspections":
-        html += "<thead class='thead-inverse'>"
+        html += "<thead>"
         html += "<tr>";
-        html += "<th style='width: " + restaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
-        html += "<th style='width: " + dateColWidth + "px; text-align: center'>" + "Date" + "</td>";
-        html += "<th style='width: " + scoreWidth + "px; text-align: center'>" + "Score" + "</td>";
+        html += "<th style='width: " + inspecRestaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
+        html += "<th style='width: " + inspecDateColWidth + "px; text-align: center'>" + "Date" + "</td>";
+        html += "<th style='width: " + inspecScoreWidth + "px; text-align: center'>" + "Score" + "</td>";
         html += "</tr>";
         html += "</thead>";
         break;
 
       // add violation data
       case "violations":
+        html += "<thead>"
         html += "<tr>";
-        html += "<td>" + "Restaurant Name" + "</td>";
-        html += "<td>" + "Violation Risk Level" + "</td>";
+        html += "<td style='width: " + vioRestaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
+        html += "<th style='width: " + vioDateColWidth + "px; text-align: center'>" + "Date" + "</td>";
+        html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + "Level" + "</td>";
         html += "</tr>";
+        html += "</thead>";
         break;
     }
 
@@ -151,12 +159,12 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
         html += "</tbody>";
         inspections.forEach(function(d) {
           html += "<tr>";
-          html += "<td style='width: " + restaurantColWidth + "px'>" + d["name"] + "</td>";
+          html += "<td style='width: " + inspecRestaurantColWidth + "px'>" + d["name"] + "</td>";
           var month = Math.floor(((d["date"] % 10000) / 100)).toString();
           var day = (d["date"] % 100).toString()
           var year = Math.floor((d["date"] / 10000)).toString();
-          html += "<td style='width: " + dateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
-          html += "<td style='width: " + scoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
+          html += "<td style='width: " + inspecDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+          html += "<td style='width: " + inspecScoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
           html += "</tr>";
         });
         html += "</tbody>";
@@ -167,8 +175,12 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
         var violations = vis.getAllViolations(feature.properties.name);
         violations.forEach(function(d) {
           html += "<tr>";
-          html += "<td>" + d["name"] + "</td>";
-          html += "<td>" + d["risk_category"] + "</td>";
+          html += "<td style='width: " + vioRestaurantColWidth + "px;'>" + d["name"] + "</td>";
+          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+          var day = (d["date"] % 100).toString()
+          var year = Math.floor((d["date"] / 10000)).toString();
+          html += "<td style='width: " + vioDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+          html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + d["risk_category"] + "</td>";
         });
         break;
     }
