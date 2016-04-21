@@ -105,12 +105,12 @@
 					<li class="menuItem"><a href="#contact">Contact</a></li> -->
 					<li class="menuItem"><a href="#whatis">What Is This?</a></li> 
 					<li class="menuItem"><a href="#chloropleth-section">Chloropleth</a></li>
-					<!-- <li class="menuItem"><a href="#animation">Animation</a></li>
-					<li class="menuItem"><a href="#heatmap">HeatMap</a></li> -->
-					<li class="menuItem"><a href="#useit">Use It</a></li>
-					<li class="menuItem"><a href="#screen">Screenshot</a></li>
-					<li class="menuItem"><a href="#credits">Credits</a></li>
-					<li class="menuItem"><a href="#contact">Contact</a></li>
+					<li class="menuItem"><a href="#animation-section">Animation</a></li>
+					<!-- <li class="menuItem"><a href="#heatmap">HeatMap</a></li> -->
+					<!-- <li class="menuItem"><a href="#useit">Use It</a></li> -->
+					<!-- <li class="menuItem"><a href="#screen">Screenshot</a></li> -->
+					<!-- <li class="menuItem"><a href="#credits">Credits</a></li> -->
+					<!-- <li class="menuItem"><a href="#contact">Contact</a></li> -->
 				</ul>
 			</div>
 		   
@@ -254,9 +254,42 @@
 		</div>
 
 	</div>
+
+	<div id="animation-section" class="content-section-b">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div id="wrapper">
+				    <div id="map"></div>
+			      	<button id="play">Play</button>
+			      	<span id="clock">Hour</span>
+				</div>
+			    <div class="row">
+			      	<div class="col-md-12">
+			        	<!-- Headline -->
+			        	<h1>Food Truck Routes in SF
+			        	</h1>
+				        <!-- animation timeline -->
+				        <div id="truck-timeline">
+			        	</div>
+
+				        <!-- animation visualization -->
+				        <div id="truck-route-map">
+				        </div>
+				        </br>
+				    </div>
+			    </div>
+
+			</div>
+
+		</div>
+
+	</div>
 	
 	<!-- Use it -->
-    <div id ="useit" class="content-section-a">
+    <div id="useit" class="content-section-a">
 
         <div class="container">
 			
@@ -622,12 +655,13 @@
 	<script src="js/leaflet.js"></script>
 	<script src="js/queue.min.js"></script>
 	<script src="js/topojson.js"></script>
+	<script src="js/d3.slider.js"></script>
 
 	<!-- Custom JavaScript -->
 	<script src="js/chloropleth.js"></script>
 	<!-- TODO: only comment in when using -->
+	<script src="js/truckRoute.js"></script>
 	<!-- <script src="js/heatMap.js"></script> -->
-	<!-- <script src="js/truckRoute.js"></script> -->
 
 	<!-- Load data, create visualization -->
 	<script src="js/main.js"></script>
