@@ -17,6 +17,24 @@ Chloropleth = function(_parentElement, _visCenter, _restaurantData, _geoBoundary
 }
 
 /**
+ * Prettifies the name of a business (removes extraneous caps)
+ * @param:string: name - name of a business
+ */
+Chloropleth.prototype.prettifyBusinessName = function(name) {
+  var words = name.split(" ").map(function(word) { return word.toLowerCase(); });
+  result = [];
+  words.forEach(function(word) {
+    var code = word.charCodeAt(0);
+    // it is a letter
+    if (((code >= 65) && (code <= 90)) || ((code >= 97) && (code <= 122))) {
+      newWord = word.slice(0,1).toUpperCase() + word.slice(1,word.length);
+      result.push(newWord);
+    }
+  });
+  return result.join(" ");
+}
+
+/**
  * Return all inspection data for a specific neighborhood
  * @param:string: neighborhood -- a neighborhood name
  */
@@ -32,7 +50,7 @@ Chloropleth.prototype.getAllInspections = function(neighborhood) {
 			inspection_data = inspection_data.filter(function(a) { return a.Score != null });
 			if (inspection_data.length > 0) {
 				obj = inspection_data[0];
-				obj["name"] = business_data["name"];
+				obj["name"] = vis.prettifyBusinessName(business_data["name"]);
 				results.push(inspection_data[0]);
 			}
 		}
@@ -56,7 +74,7 @@ Chloropleth.prototype.getAllViolations = function(neighborhood) {
       if (violation_data.length > 0) {
         violation_data = violation_data.sort(function(a,b) { return a.date - b.date; });
         violation_data.forEach(function(d) {
-          d["name"] = business_data["name"];
+          d["name"] = vis.prettifyBusinessName(business_data["name"]);
           results.push(d);
         });
       }
