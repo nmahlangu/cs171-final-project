@@ -80,6 +80,6 @@ queue()
  */
 function createVis() {
 	chloropleth = new Chloropleth("chloropleth", sfCoordinates, restaurantData, geoBoundaryData, chloroplethData);
-	truckMap = new TruckMap("truck-route-map", timeTable, truckData, truck_to_index, index_to_truck, [37.774929, -122.419416]);
+	truckMap = new TruckMap("truck-route-map", timeTable, truckData, truck_to_index, index_to_truck, sfCoordinates);
  //    heatMap = new HeatMap("heat-map", truckLocations, [37.774929, -122.419416]);
 }
