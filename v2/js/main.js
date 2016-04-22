@@ -12,6 +12,7 @@ var truckMap;
 
 var timeTable = [];
 var truckLocations = [];
+var restaurantLocations = [];
 var truckData;
 var truck_to_index;
 var index_to_truck;
@@ -65,6 +66,14 @@ queue()
 	        truckLocations.push([timeTable[i][0][0], timeTable[i][0][1], 1.0]);
 	    }
 
+		// creat list of restaurant locations for heat map
+		for (var key in restaurantData) {
+			if (restaurantData.hasOwnProperty(key)) {
+				var restaurant = restaurantData[key]["business_data"];
+				restaurantLocations.push([restaurant["latitude"], restaurant["longitude"], 1.0]);
+			}
+		}
+
 		truckData = _truckData;
 		truck_to_index = _truck_to_index;
 		index_to_truck = _index_to_truck;
@@ -81,5 +90,5 @@ queue()
 function createVis() {
 	chloropleth = new Chloropleth("chloropleth", sfCoordinates, restaurantData, geoBoundaryData, chloroplethData);
 	truckMap = new TruckMap("truck-route-map", timeTable, truckData, truck_to_index, index_to_truck, sfCoordinates);
- //    heatMap = new HeatMap("heat-map", truckLocations, [37.774929, -122.419416]);
+	heatMap = new HeatMap("heat-map", truckLocations, restaurantLocations, sfCoordinates);
 }

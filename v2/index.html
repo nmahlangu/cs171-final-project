@@ -293,7 +293,62 @@
 		</div>
 
 	</div>
-	
+
+	<!-- *********************************************** Heat Map ***********************************************-->
+	<div id="heatmap-section" class="content-section-b">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-8 wow fadeInLeftBig">
+					<!-- Heat Map visualization -->
+					<div id="heat-map">
+					</div>
+				</div>
+
+				<div class="col-sm-4 wow fadeInRightBig"  data-animation-delay="200">
+					<!-- headers -->
+					<h3 class="section-heading">Heat Map</h3>
+					<p class="lead">Use the drop down menu below to toggle between restaurant and food truck data.
+					</p>
+
+					<!-- drop down menu -->
+					<div class="row" >
+						<div class="form-group">
+							<label for="select" class="col-lg-4 control-label">Map Filter:</label>
+							<div class="col-lg-6">
+								<select class="form-control" id="heatmap-dropdown">
+									<option value="trucks">Food Trucks</option>
+									<option value="restaurants">Restaurants</option>
+								</select>
+							</div>
+							<div class="col-lg-2">
+							</div>
+						</div>
+					</div>
+					</br>
+
+					<!--&lt;!&ndash; tooltip table headers &ndash;&gt;-->
+					<!--<div id="chloropleth-tooltip-header">-->
+
+					<!--</div>-->
+
+					<!--&lt;!&ndash; tooltip box &ndash;&gt;-->
+					<!--<div id="chloropleth-tooltip-box">-->
+					<!--</div>-->
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--**************************************************************************************-->
 	<!-- Use it -->
     <div id="useit" class="content-section-a">
 
@@ -662,12 +717,15 @@
 	<script src="js/queue.min.js"></script>
 	<script src="js/topojson.js"></script>
 	<script src="js/d3.slider.js"></script>
+	<!--FOR HEAT MAP-->
+	<script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+
 
 	<!-- Custom JavaScript -->
 	<script src="js/chloropleth.js"></script>
 	<!-- TODO: only comment in when using -->
 	<script src="js/truckRoute.js"></script>
-	<!-- <script src="js/heatMap.js"></script> -->
+	 <script src="js/heatMap.js"></script>
 
 	<!-- Load data, create visualization -->
 	<script src="js/main.js"></script>
