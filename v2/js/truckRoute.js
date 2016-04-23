@@ -354,6 +354,8 @@ TruckMap.prototype.updateTrucks = function(){
             }
 
         })
+        ;
+
 };
 
 TruckMap.prototype.updateTimeline = function(){
