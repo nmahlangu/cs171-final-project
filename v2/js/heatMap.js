@@ -25,8 +25,8 @@ HeatMap = function(_parentElement, _locationData, _restaurantData, _mapPosition)
 HeatMap.prototype.initVis = function() {
   var vis = this;
 
-  console.log("HI")
-  console.log(vis.restaurantData)
+  // console.log("HI")
+  // console.log(vis.restaurantData)
 
   // create map
   vis.map = L.map(vis.parentElement).setView(vis.mapPosition, 13);
@@ -82,8 +82,8 @@ HeatMap.prototype.updateVis = function() {
 
   vis.map.removeLayer(vis.heat);
 
-  console.log(vis.locationData);
-  console.log(vis.restaurantData);
+  // console.log(vis.locationData);
+  // console.log(vis.restaurantData);
 
   if (dropdownValue == "trucks") {
     vis.heat = L.heatLayer(vis.locationData, {
@@ -98,6 +98,6 @@ HeatMap.prototype.updateVis = function() {
       maxZoom: 17}).addTo(vis.map);
   }
 
-  console.log(dropdownValue);
+  // console.log(dropdownValue);
 
 };

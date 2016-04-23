@@ -74,7 +74,7 @@ TruckMap.prototype.initVis = function() {
     //var startingValue = new Date('2016-05-01');
     var startValue = vis.timeScale(startingValue);
 
-    console.log(startingValue);
+    // console.log(startingValue);
 
     // defines brush
     vis.brush = d3.svg.brush()

@@ -32,20 +32,20 @@ queue()
 		}
 
 		// debug
-		console.log("restaurantData: ");
-		console.log(_restaurantData);
-		console.log("geoBoundaryData: ");
-		console.log(_geoBoundaryData);
-		console.log("chloroplethData: ");
-		console.log(_chloroplethData);
-		console.log("truckData: ");
-		console.log(_truckData);
-		console.log("truck_to_index: ");
-		console.log(_truck_to_index);
-		console.log("index_to_truck: ");
-		console.log(_index_to_truck);
-		console.log("timeData: ");
-		console.log(_timeData);
+		// console.log("restaurantData: ");
+		// console.log(_restaurantData);
+		// console.log("geoBoundaryData: ");
+		// console.log(_geoBoundaryData);
+		// console.log("chloroplethData: ");
+		// console.log(_chloroplethData);
+		// console.log("truckData: ");
+		// console.log(_truckData);
+		// console.log("truck_to_index: ");
+		// console.log(_truck_to_index);
+		// console.log("index_to_truck: ");
+		// console.log(_index_to_truck);
+		// console.log("timeData: ");
+		// console.log(_timeData);
 
 		//****************************** Chloropleth ******************************//
 		restaurantData = _restaurantData[0];
