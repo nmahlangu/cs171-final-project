@@ -17,6 +17,24 @@ Chloropleth = function(_parentElement, _visCenter, _restaurantData, _geoBoundary
 }
 
 /**
+ * Prettifies the name of a business (removes extraneous caps)
+ * @param:string: name - name of a business
+ */
+Chloropleth.prototype.prettifyBusinessName = function(name) {
+  var words = name.split(" ").map(function(word) { return word.toLowerCase(); });
+  result = [];
+  words.forEach(function(word) {
+    var code = word.charCodeAt(0);
+    // it is a letter
+    if (((code >= 65) && (code <= 90)) || ((code >= 97) && (code <= 122))) {
+      newWord = word.slice(0,1).toUpperCase() + word.slice(1,word.length);
+      result.push(newWord);
+    }
+  });
+  return result.join(" ");
+}
+
+/**
  * Return all inspection data for a specific neighborhood
  * @param:string: neighborhood -- a neighborhood name
  */
@@ -32,7 +50,7 @@ Chloropleth.prototype.getAllInspections = function(neighborhood) {
 			inspection_data = inspection_data.filter(function(a) { return a.Score != null });
 			if (inspection_data.length > 0) {
 				obj = inspection_data[0];
-				obj["name"] = business_data["name"];
+				obj["name"] = vis.prettifyBusinessName(business_data["name"]);
 				results.push(inspection_data[0]);
 			}
 		}
@@ -56,7 +74,7 @@ Chloropleth.prototype.getAllViolations = function(neighborhood) {
       if (violation_data.length > 0) {
         violation_data = violation_data.sort(function(a,b) { return a.date - b.date; });
         violation_data.forEach(function(d) {
-          d["name"] = business_data["name"];
+          d["name"] = vis.prettifyBusinessName(business_data["name"]);
           results.push(d);
         });
       }
@@ -85,6 +103,7 @@ Chloropleth.prototype.setColorScaleDomain = function(dropdownValue) {
     }
   }, []);
   colorScaleDomain = colorScaleDomain.sort(function(a,b) { return a - b; });
+  colorScaleDomain = colorScaleDomain.filter(function(d) { return d != 0; });
   vis.colorScale
     .domain([colorScaleDomain[0], colorScaleDomain[colorScaleDomain.length - 1]]);
 }
@@ -100,52 +119,86 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
 
   // change table info on click
   layer.on('click', function(e) {
-    var html = "";
+
+    // inspection data variables
+    var inspecRestaurantColWidth = 160;
+    var inspecDateColWidth = 100;
+    var inspecScoreWidth = 60;
+
+    // violation data variables
+    var vioRestaurantColWidth = 100;
+    var vioDateColWidth = 100;
+    var vioLevelColWidth = 100;
 
     // update neighborhood being shown
-    var neighbodhoodDiv = $("#neighborhood_being_show");
-    neighbodhoodDiv.html(feature.properties.name);
+    $("#neighborhood_being_show").html(feature.properties.name);
 
-    // header
-    var div = $("#chloropleth-tooltip-box");
-    // html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
-
-    // start table
-    html += "<table class='CSSTableGenerator'>";
+    // create new table headers
+    var html = "";
+    html += "<table id='chloropleth_table_header' class='table table-bordered'>";
 
     switch(dropdownValue) {
-      // add inspection data
       case "inspections":
+        html += "<thead>"
         html += "<tr>";
-        html += "<td style='width: 280px'>" + "Restaurant Name" + "</td>";
-        html += "<td style='width: 280px'>" + "Date" + "</td>";
-        html += "<td style='width: 280px'>" + "Inspection Type" + "</td>";
-        html += "<td >" + "Inspection Score" + "</td>";
+        html += "<th style='width: " + inspecRestaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
+        html += "<th style='width: " + inspecDateColWidth + "px; text-align: center'>" + "Date" + "</td>";
+        html += "<th style='width: " + inspecScoreWidth + "px; text-align: center'>" + "Score" + "</td>";
         html += "</tr>";
-
-        var inspections = vis.getAllInspections(feature.properties.name);
-        inspections.forEach(function(d) {
-          html += "<tr>";
-          html += "<td>" + d["name"] + "</td>";
-          html += "<td>" + d["date"] + "</td>";
-          html += "<td>" + d["type"] + "</td>";
-          html += "<td>" + d["Score"] + "</td>";
-          html += "</tr>";
-        });
+        html += "</thead>";
         break;
 
       // add violation data
       case "violations":
+        html += "<thead>"
         html += "<tr>";
-        html += "<td>" + "Restaurant Name" + "</td>";
-        html += "<td>" + "Violation Risk Level" + "</td>";
+        html += "<td style='width: " + vioRestaurantColWidth + "px; text-align: center'>" + "Restaurant" + "</td>";
+        html += "<th style='width: " + vioDateColWidth + "px; text-align: center'>" + "Date" + "</td>";
+        html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + "Level" + "</td>";
         html += "</tr>";
+        html += "</thead>";
+        break;
+    }
 
+    // close table
+    html += "</table>";
+
+    // update table headers
+    $("#chloropleth-tooltip-header").html(html);
+
+    // create new table body
+    html = "";
+    html += "<table class='table table-striped table-bordered table-hover' style='table-layout: fixed'>";
+
+    switch(dropdownValue) {
+      // add inspection data
+      case "inspections":
+        var inspections = vis.getAllInspections(feature.properties.name);
+        html += "</tbody>";
+        inspections.forEach(function(d) {
+          html += "<tr>";
+          html += "<td style='width: " + inspecRestaurantColWidth + "px'>" + d["name"] + "</td>";
+          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+          var day = (d["date"] % 100).toString()
+          var year = Math.floor((d["date"] / 10000)).toString();
+          html += "<td style='width: " + inspecDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+          html += "<td style='width: " + inspecScoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
+          html += "</tr>";
+        });
+        html += "</tbody>";
+        break;
+
+      // add violation data
+      case "violations":
         var violations = vis.getAllViolations(feature.properties.name);
         violations.forEach(function(d) {
           html += "<tr>";
-          html += "<td>" + d["name"] + "</td>";
-          html += "<td>" + d["risk_category"] + "</td>";
+          html += "<td style='width: " + vioRestaurantColWidth + "px;'>" + d["name"] + "</td>";
+          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+          var day = (d["date"] % 100).toString()
+          var year = Math.floor((d["date"] / 10000)).toString();
+          html += "<td style='width: " + vioDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+          html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + d["risk_category"] + "</td>";
         });
         break;
     }
@@ -153,8 +206,8 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
     // close table
     html += "</table>";
 
-    // update displayed html
-    div.html(html);
+    // update table body
+    $("#chloropleth-tooltip-box").html(html);
   });
 }
 
@@ -216,44 +269,6 @@ Chloropleth.prototype.initVis = function() {
   	attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
   }).addTo(vis.map);
 
-<<<<<<< HEAD
-    // add default geo-json layer
-    vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
-     	style: function(f) {
-      		var inspectionScore = vis.chloroplethData[f.properties.name].avg_inspection_score;
-      		var colorShade = vis.colorScale(inspectionScore);
-      		return {color: colorShade};
-      	},
-      	weight: 3,
-      	fillOpacity: 0.6,
-        onEachFeature: function (feature, layer) {
-        	layer.on('mouseover', function(e) {
-        		var html = "";
-
-        		// header
-        		var div = $("#chloropleth-tooltip-box");
-        		html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
-
-        		// start table
-        		html += "<table>";
-
-        		// inspections
-        		var inspections = vis.getAllInspections(feature.properties.name);
-        		inspections.forEach(function(d) {
-        			html += "<tr>";
-        			html += "<td>" + d["name"] + "</td>";
-        			html += "<td>" + d["Score"] + "</td>";
-        			html += "</tr>";
-        		});
-
-        		// close table
-        		html += "</table>";
-
-        		div.html(html);
-        	});
-      	}
-    }).addTo(vis.map);
-=======
   // add default geo-json layer
   vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
    	style: function(f) {
@@ -267,7 +282,6 @@ Chloropleth.prototype.initVis = function() {
         vis.updateTooltipInfo(feature, layer, "inspections");
     	}
   }).addTo(vis.map);
->>>>>>> nick
 
   // add event handler to dropdown
   vis.dropdown = document.getElementById("chloropleth-dropdown");
@@ -295,52 +309,6 @@ Chloropleth.prototype.updateChloropleth = function() {
 	vis.map.removeLayer(vis.neighorhoods);
 	
 	// add new geo-json layer
-<<<<<<< HEAD
-    vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
-      style: function(f) {
-      	var score;
-      	switch(dropdownValue) {
-      		case "inspections":
-      			score = vis.chloroplethData[f.properties.name].avg_inspection_score;
-      			break;
-      		case "violations":
-      			score = vis.chloroplethData[f.properties.name].avg_violation_score;
-      			break;
-      	}
-      	var colorShade = vis.colorScale(score);
-      	return {color: colorShade};
-      },
-      weight: 3,
-      fillOpacity: 0.6,
-      /** TODO: make it alternate between inspections and violations in final version **/
-      onEachFeature: function (feature, layer) {
-        layer.on('mouseover', function(e) {
-          // TODO: update div with all inspections / violations
-          var html = "";
-
-          // header
-          var div = $("#chloropleth-tooltip-box");
-          html += "<h1 class='chloropleth-tooltip-header'>" + feature.properties.name + "</h1>";
-
-          // start table
-          html += "<table>";
-
-          // inspections
-          var inspections = vis.getAllInspections(feature.properties.name);
-          inspections.forEach(function(d) {
-            // TODO: 
-            html += "<tr>";
-            html += "<td>" + d["name"] + "</td>";
-            html += "<td>" + d["Score"] + "</td>";
-            html += "</tr>";
-          });
-
-          // close table
-          html += "</table>";
-
-          div.html(html);
-        });
-=======
   vis.neighorhoods = L.geoJson(vis.geoBoundaryData, {
     style: function(f) {
     	var score;
@@ -359,7 +327,6 @@ Chloropleth.prototype.updateChloropleth = function() {
     fillOpacity: 0.6,
       onEachFeature: function (feature, layer) {
         vis.updateTooltipInfo(feature, layer, dropdownValue);
->>>>>>> nick
       }
     }).addTo(vis.map);
 

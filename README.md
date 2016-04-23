@@ -1,2 +1,7 @@
-# cs171-final-project
-CS171 final project by Nicholas Mahlangu and Yuan Jiang
+#Flatfy - Theme | New Version!
+
+##Responsive Mobile & Flat Design 
+Own Carousel & Bootstrap Framework CSS 
+Font Icon Svg & Animate
+
+Theme made by [Andrea Galanti](http://www.andreagalanti.it/flatfy.php)
