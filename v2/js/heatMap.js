@@ -62,7 +62,7 @@ HeatMap.prototype.wrangleData = function() {
   var vis = this;
 
   // add a marker for Maxwell Dworkin
-  var cityCenter = L.marker(vis.mapPosition).addTo(vis.map);
+  // var cityCenter = L.marker(vis.mapPosition).addTo(vis.map);
 
   // Update the visualization
   vis.updateVis();
