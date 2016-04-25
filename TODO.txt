@@ -1,0 +1,6 @@
+Chloropleth
+===========
+- Figure out how to handle missing data
+- Have a "click map for info" display next to map before a user has clicked
+  on a neighborhood
+- Display the neighborhood name somewhere when you click it on the map
