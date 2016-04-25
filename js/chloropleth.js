@@ -174,7 +174,7 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
       // add inspection data
       case "inspections":
         var inspections = vis.getAllInspections(feature.properties.name);
-        html += "</tbody>";
+        html += "<tbody>";
         inspections.forEach(function(d) {
           html += "<tr>";
           html += "<td style='width: " + inspecRestaurantColWidth + "px'>" + d["name"] + "</td>";
