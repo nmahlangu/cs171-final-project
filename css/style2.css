@@ -102,8 +102,8 @@ h1 .sub-headline {
 
 div.tooltip {
     position: absolute;
-    text-align: left;
-    width: 175px;
+    text-align: center;
+    width: 195px;
     padding: 8px;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-size: 13px;
@@ -113,6 +113,11 @@ div.tooltip {
     border: 0px;
     border-radius: 8px;
     pointer-events: none;
+}
+
+div.tooltip-header {
+    text-align: center;
+    font-size: 18px;
 }
 
 /*TIMELINE*/

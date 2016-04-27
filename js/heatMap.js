@@ -94,7 +94,7 @@ HeatMap.prototype.updateVis = function() {
   else {
     vis.heat = L.heatLayer(vis.restaurantData, {
       radius: 20,
-      blur: 15,
+      blur: 20,
       maxZoom: 17}).addTo(vis.map);
   }
 
