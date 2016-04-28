@@ -35,6 +35,10 @@ h1 .sub-headline {
   padding-bottom: 20px;
 }
 
+.intro {
+    font-size: 18px;
+    /*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;*/
+}
 /****************************** Chloropleth ******************************/
 #chloropleth {
   width: 100%;
