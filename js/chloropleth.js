@@ -1,9 +1,9 @@
 /**
  *  Chloropleth - Object constructor function
- *  @param _parentElement   -- HTML element in which to draw the visualization
- *  @param _restaurantData  -- Business, inspection, and violation data for all businesses
- *  @param _geoBoundaryData -- Topojson data for SF boundaries
- *  @param _chloroplethData -- Shading values for the chloropleth
+ *  @param:string: parentElement   -- HTML element in which to draw the visualization
+ *  @param:object: restaurantData  -- Business, inspection, and violation data for all businesses
+ *  @param:object: geoBoundaryData -- Topojson data for SF boundaries
+ *  @param:object: chloroplethData -- Shading values for the chloropleth
  */
 Chloropleth = function(_parentElement, _visCenter, _restaurantData, _geoBoundaryData, _chloroplethData) {
 	this.parentElement = _parentElement;

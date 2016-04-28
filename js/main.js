@@ -31,22 +31,6 @@ queue()
 			throw error;
 		}
 
-		// debug
-		// console.log("restaurantData: ");
-		// console.log(_restaurantData);
-		// console.log("geoBoundaryData: ");
-		// console.log(_geoBoundaryData);
-		// console.log("chloroplethData: ");
-		// console.log(_chloroplethData);
-		// console.log("truckData: ");
-		// console.log(_truckData);
-		// console.log("truck_to_index: ");
-		// console.log(_truck_to_index);
-		// console.log("index_to_truck: ");
-		// console.log(_index_to_truck);
-		// console.log("timeData: ");
-		// console.log(_timeData);
-
 		//****************************** Chloropleth ******************************//
 		restaurantData = _restaurantData[0];
 		geoBoundaryData = _geoBoundaryData;
@@ -66,7 +50,7 @@ queue()
 	        truckLocations.push([timeTable[i][0][0], timeTable[i][0][1], 1.0]);
 	    }
 
-		// creat list of restaurant locations for heat map
+		// create list of restaurant locations for heat map
 		for (var key in restaurantData) {
 			if (restaurantData.hasOwnProperty(key)) {
 				var restaurant = restaurantData[key]["business_data"];
@@ -77,8 +61,6 @@ queue()
 		truckData = _truckData;
 		truck_to_index = _truck_to_index;
 		index_to_truck = _index_to_truck;
-
-	    //****************************** Heatmap ******************************//
 
 	    // create the visualization
 	    createVis();
