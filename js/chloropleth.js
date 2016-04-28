@@ -120,6 +120,9 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
   // change table info on click
   layer.on('click', function(e) {
 
+    // update neighborhood being shown
+    $("#chloropleth_h3_heading").html(feature.properties.name);
+
     // inspection data variables
     var inspecRestaurantColWidth = 160;
     var inspecDateColWidth = 100;
@@ -129,9 +132,6 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
     var vioRestaurantColWidth = 100;
     var vioDateColWidth = 100;
     var vioLevelColWidth = 100;
-
-    // update neighborhood being shown
-    $("#neighborhood_being_show").html(feature.properties.name);
 
     // create new table headers
     var html = "";
@@ -166,45 +166,58 @@ Chloropleth.prototype.updateTooltipInfo = function(feature, layer, dropdownValue
     // update table headers
     $("#chloropleth-tooltip-header").html(html);
 
-    // create new table body
-    html = "";
-    html += "<table class='table table-striped table-bordered table-hover' style='table-layout: fixed'>";
-
     switch(dropdownValue) {
       // add inspection data
       case "inspections":
         var inspections = vis.getAllInspections(feature.properties.name);
-        html += "<tbody>";
-        inspections.forEach(function(d) {
-          html += "<tr>";
-          html += "<td style='width: " + inspecRestaurantColWidth + "px'>" + d["name"] + "</td>";
-          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
-          var day = (d["date"] % 100).toString()
-          var year = Math.floor((d["date"] / 10000)).toString();
-          html += "<td style='width: " + inspecDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
-          html += "<td style='width: " + inspecScoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
-          html += "</tr>";
-        });
-        html += "</tbody>";
+        if (inspections.length > 0) {
+          // create new table body
+          html = "";
+          html += "<table class='table table-striped table-bordered table-hover' style='table-layout: fixed'>";
+          html += "<tbody>";
+          inspections.forEach(function(d) {
+            html += "<tr>";
+            html += "<td style='width: " + inspecRestaurantColWidth + "px'>" + d["name"] + "</td>";
+            var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+            var day = (d["date"] % 100).toString()
+            var year = Math.floor((d["date"] / 10000)).toString();
+            html += "<td style='width: " + inspecDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+            html += "<td style='width: " + inspecScoreWidth + "px; text-align: center'>" + d["Score"] + "</td>";
+            html += "</tr>";
+          });
+          html += "</tbody>";
+          // close table
+          html += "</table>";
+        }
+        else {
+          html = "</br><p style='text-align: center; font-size: 18px'>No data to show</p>";
+        }
         break;
 
       // add violation data
       case "violations":
         var violations = vis.getAllViolations(feature.properties.name);
-        violations.forEach(function(d) {
-          html += "<tr>";
-          html += "<td style='width: " + vioRestaurantColWidth + "px;'>" + d["name"] + "</td>";
-          var month = Math.floor(((d["date"] % 10000) / 100)).toString();
-          var day = (d["date"] % 100).toString()
-          var year = Math.floor((d["date"] / 10000)).toString();
-          html += "<td style='width: " + vioDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
-          html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + d["risk_category"] + "</td>";
-        });
+        if (violations.length > 0) {
+          // create new table body
+          html = "";
+          html += "<table class='table table-striped table-bordered table-hover' style='table-layout: fixed'>";
+          violations.forEach(function(d) {
+            html += "<tr>";
+            html += "<td style='width: " + vioRestaurantColWidth + "px;'>" + d["name"] + "</td>";
+            var month = Math.floor(((d["date"] % 10000) / 100)).toString();
+            var day = (d["date"] % 100).toString()
+            var year = Math.floor((d["date"] / 10000)).toString();
+            html += "<td style='width: " + vioDateColWidth + "px; text-align: center'>" + month + "/" + day + "/" + year + "</td>";
+            html += "<td style='width: " + vioLevelColWidth + "px; text-align: center'>" + d["risk_category"] + "</td>";
+          });
+          // close table
+          html += "</table>";
+        }
+        else {
+          html = "</br><p style='text-align: center; font-size: 18px'>No data to show</p>";
+        }
         break;
     }
-
-    // close table
-    html += "</table>";
 
     // update table body
     $("#chloropleth-tooltip-box").html(html);
