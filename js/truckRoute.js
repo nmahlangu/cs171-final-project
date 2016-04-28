@@ -2,7 +2,11 @@
 /*
  *  TruckMap - Object constructor function
  *  @param _parentElement   -- HTML element in which to draw the visualization
- *  @param _data            -- Array with all truck locations and opening indicator, indexed by hour
+ *  @param _timeTable            -- Array with all truck locations and opening indicator, indexed by hour
+ *  @param _truckData            -- Array with all truck locations and opening indicator, indexed by hour
+ *  @param _truck_to_index       -- Object with truck ID as key mapped onto index in _truckData
+ *  @param _index_to_truck       -- Object with index in _truckData mapped onto truck ID
+ *  @param _mapPosition          -- Array containing city center coordinates
  */
 
 TruckMap = function(_parentElement, _timeTable, _truckData, _truck_to_index, _index_to_truck, _mapPosition) {
@@ -52,7 +56,7 @@ TruckMap = function(_parentElement, _timeTable, _truckData, _truck_to_index, _in
 };
 
 /*
- *  Initialize station map
+ *  Initialize food truck map
  */
 
 TruckMap.prototype.initVis = function() {
@@ -65,14 +69,13 @@ TruckMap.prototype.initVis = function() {
     // initialize hour to Sunday midnight
     vis.hour = 0;
 
+    // initialize brush
     function brushed() {
         var value = vis.brush.extent()[0];
-
         if (d3.event.sourceEvent) { // not a programmatic event
             value = vis.timeScale.invert(d3.mouse(this)[0]);
             vis.brush.extent([value, value]);
         }
-
         vis.handle.attr("x", timeScale(value));
         vis.handle.select('text').text(vis.dateFormat(value));
     }
@@ -81,18 +84,19 @@ TruckMap.prototype.initVis = function() {
     vis.timeScale = d3.time.scale()
         .domain([new Date(2016, 4, 1), new Date(2016, 4, 8)])
         .range([vis.padding, vis.width-vis.padding]);
-        //.clamp(true);
 
+    // y-axis scale for timeline histogram
     vis.ntruckScale = d3.scale.linear()
         .domain(d3.extent(vis.timelineData, function(d) {return d.ntrucks}))
         .range([80, 0]);
 
+    // draw in area for timeline histogram
     vis.area = d3.svg.area()
         .x(function(d) { return vis.timeScale(d.time); })
         .y0(80)
         .y1(function(d) { return vis.ntruckScale(d.ntrucks); });
 
-    // initial value
+    // initial value for timeline
     var startingValue = new Date(2016, 4, 1);
     var startValue = vis.timeScale(startingValue);
 
@@ -136,18 +140,7 @@ TruckMap.prototype.initVis = function() {
         .attr("class", "x axis")
         .attr("transform", "translate(0," + (vis.timelineHeight / 2 + 20) +  ")")
         .call(vis.timelineAxis)
-        //.select(".domain")
-        //.select(function() {
-        //    console.log(this);
-        //    return this.parentNode.appendChild(this.cloneNode(true));
-        //})
-        //.attr("class", "halo")
         ;
-
-    //vis.timelineSVG.selectAll("text")
-        //.attr("transform", "rotate(90)")
-        //.attr("transform", "translate(0,20")
-        //.style("text-anchor", "start");
 
     // instantiate slider
     vis.slider = vis.timelineSVG.append("g")
@@ -166,25 +159,18 @@ TruckMap.prototype.initVis = function() {
         .attr("transform", "translate(-50," + (vis.timelineHeight / 2 - 28) + ")")
         .attr("x",vis.timeScale(startingValue))
         .attr("width", "50")
-        .attr("height", "50")
-    ;
+        .attr("height", "50");
 
     vis.truckText = vis.slider.append('text')
         .text("Let's go!")
         .attr("x", vis.timeScale(startingValue) - vis.padding)
-        .attr("y", vis.timelineHeight/2 - 45)
-        ;
+        .attr("y", vis.timelineHeight/2 - 45);
 
     // create map
     vis.map = L.map(vis.parentElement).setView(vis.mapPosition, 13);
 
     // images
     L.Icon.Default.imagePath = "img";
-
-    // tile layer
-    //L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    //  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
-    //}).addTo(vis.map);
 
     // black and white tile layer
     L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.{ext}', {
@@ -196,7 +182,6 @@ TruckMap.prototype.initVis = function() {
 
     // add a legend to the map
     vis.legend = L.control({position: 'topleft'});
-
     vis.legend.onAdd = function(map) {
         var div = L.DomUtil.create('div', 'info truck-legend'),
             status = ["yellow", "black"],
@@ -205,14 +190,13 @@ TruckMap.prototype.initVis = function() {
         // add title to legend
         div.innerHTML = "<strong class='key-title'>Key</strong>";
 
-        // loop through our density intervals and generate a label with a colored square for each interval
+        // create color keys
         for (var i = 0; i < status.length; i++) {
             div.innerHTML +=
                 '<br><strong style="background:' + status[i] + '">' + "<br>" + labels[i] + '</strong><br><br><br>';
         }
         return div;
     };
-
     vis.legend.addTo(vis.map);
 
     // we will be appending the SVG to the Leaflet map pane
@@ -250,22 +234,14 @@ TruckMap.prototype.initVis = function() {
         })
         .attr('fill', function(d){
             var info = d[vis.hour];
-            if (info[2] > 0){
-                return vis.openTruckColor;
-            }
-            else {
-                return vis.closeTruckColor;
-            }
+            if (info[2] > 0){ return vis.openTruckColor;}
+            else { return vis.closeTruckColor;}
         })
         .attr('stroke', 'none')
         .attr('opacity', function(d){
             var info = d[vis.hour];
-            if (info[2] == 1){
-                return vis.hoverTruckOpacity;
-            }
-            else {
-                return vis.origTruckOpacity;
-            }
+            if (info[2] == 1){ return vis.hoverTruckOpacity; }
+            else { return vis.origTruckOpacity; }
         })
         .on('mouseover', function(d) {
 
@@ -274,13 +250,18 @@ TruckMap.prototype.initVis = function() {
                 .attr("fill", vis.hoverTruckColor)
                 .attr('opacity', vis.hoverTruckOpacity)
                 .attr('stroke-width', vis.hoverTruckBorder)
-                .attr('stroke', 'black')
-            ;
+                .attr('stroke', 'black');
 
             // grab truck ID from index table
             var truckId = vis.index_to_truck[vis.timeTable.indexOf(d).toString()];
 
-            var truck = vis.truckData[truckId.toString()];
+            var truck;
+            try {
+                truck = vis.truckData[truckId.toString()];
+            }
+            catch (err) {
+                truck = {"info": {"name": "Not Available", "cold_truck": "N/A", "desc": "Info for this truck is not available."}};
+            }
 
             // MAKE TOOLTIP APPEAR
             div.transition()
@@ -296,30 +277,20 @@ TruckMap.prototype.initVis = function() {
                 .attr("r", vis.origTruckSize)
                 .attr("fill", function(d) {
                     try {
-                        if (d[vis.hour][2] > 0) {
-                            return vis.openTruckColor;
-                        }
+                        if (d[vis.hour][2] > 0) { return vis.openTruckColor; }
                         else { return vis.closeTruckColor; }
                     }
-                    catch (err) {
-                        console.log("TRUCK NOT FOUND");
-                        return vis.closeTruckColor;
-                    }
+                    catch (err) { return vis.closeTruckColor; }
                 })
                 .attr("opacity", function(d){
                     try {
-                        if (d[vis.hour][2] > 0) {
-                            return vis.hoverTruckOpacity;
-                        }
+                        if (d[vis.hour][2] > 0) { return vis.hoverTruckOpacity;}
                         else { return vis.origTruckOpacity; }
                     }
-                    catch (err) {
-                        return vis.origTruckOpacity;
-                    }
+                    catch (err) { return vis.origTruckOpacity;}
                 })
                 .attr("stroke-width", vis.origTruckBorder)
                 .attr('stroke', 'none');
-
 
             //TOOLTIP DISAPPEARS
             div.transition()
@@ -327,6 +298,7 @@ TruckMap.prototype.initVis = function() {
                 .style("opacity", 0);
         });
 
+    // redraw the circles when map is moved/zoomed in
     vis.map.on("viewreset", function(){
         vis.trucks
             .attr('cx', function(d){
@@ -343,104 +315,87 @@ TruckMap.prototype.initVis = function() {
 
 };
 
+
+/**
+ * Updates the status of all the trucks given the hour
+ */
+
 TruckMap.prototype.updateTrucks = function(){
 
     var vis = this;
 
-    console.log("Current Hour");
-    console.log(vis.hour);
-
+    // update color of trucks
     d3.selectAll('.circle')
         .transition()  //select all the trucks and prepare for a transition to new values
         .duration(vis.transitionTime)  // give it a smooth time period for the transition
         .attr('fill', function(d){
             var info = d[vis.hour];
             try {
-                if (info[2] > 0){
-                    return vis.openTruckColor;
-                }
-                else {
-                    return vis.closeTruckColor;
-                }
+                if (info[2] > 0){ return vis.openTruckColor; }
+                else { return vis.closeTruckColor; }
             }
-            catch (error) {
-                return vis.closeTruckColor;
-            }
-
+            catch (error) { return vis.closeTruckColor; }
         })
         .attr('opacity', function(d){
             var info = d[vis.hour];
-
             try{
-                if (info[2] > 0){
-                    return vis.hoverTruckOpacity;
-                }
-                else {
-                    return vis.origTruckOpacity;
-                }
+                if (info[2] > 0){ return vis.hoverTruckOpacity; }
+                else { return vis.origTruckOpacity; }
             }
-            catch(err){
-                console.log(err);
-                return vis.origTruckOpacity;
-            }
-
-        })
-        ;
-
+            catch(err){ return vis.origTruckOpacity; }
+        });
 };
 
+
+/**
+ * Updates the timeline text and truck marker
+ */
 TruckMap.prototype.updateTimeline = function(){
+
     var vis = this;
 
+    // calculate the current time in the right date format
     var curr_day = Math.floor(vis.hour / 24);
     var curr_hour = vis.hour % 24;
-
     var currTime = new Date(2016, 4, curr_day + 1, curr_hour, 0, 0, 0);
 
+    // move the truck marker position
     vis.handle
         .transition()
         .duration(vis.transitionTime)
         .attr("x", vis.timeScale(currTime));
 
-    vis.truckText
-        .text(function(){
-            var mealTime = Math.floor(vis.hour/24) == 12;
-            if (mealTime == 12){
-                return "LUNCH TIME!"
-            }
-            else if (mealTime == 18){
-                return "DINNER TIME!"
-            }
-        })
-        .attr("x", vis.timeScale(currTime))
-        ;
+    //// update the clock text
+    //vis.truckText
+    //    .text(function(){
+    //        var mealTime = Math.floor(vis.hour/24) == 12;
+    //        if (mealTime == 12){ return "LUNCH TIME!"
+    //        }
+    //        else if (mealTime == 18){
+    //            return "DINNER TIME!"
+    //        }
+    //    })
+    //    .attr("x", vis.timeScale(currTime))
+    //    ;
 
 };
 
+/**
+ * Updates the truck circles on the map when playing
+ */
 TruckMap.prototype.animateTrucks = function(){
 
     var vis = this;
-
     var timer;
-
     var timeFormat = d3.time.format("%A %I %p");
 
+    // when play button is clicked, begin the animation
     d3.select("#play")
         .on('click', function(){
-
-            console.log(vis.playing);
-
-            // if the map is currently playing
             if (vis.playing == false){
-
-
                 timer = setInterval(function(){
-                    if(vis.hour < 168){
-                        vis.hour += 1;
-                    }
-                    else {
-                        vis.hour = 0;
-                    }
+                    if(vis.hour < 168){ vis.hour += 1; }
+                    else { vis.hour = 0; }
                     vis.updateTrucks();
                     vis.updateTimeline();
 
@@ -460,28 +415,4 @@ TruckMap.prototype.animateTrucks = function(){
                 vis.playing = false;   // change the status again
             }
         })
-};
-
-
-/*
- *  Data wrangling
- */
-
-TruckMap.prototype.wrangleData = function() {
-  var vis = this;
-
-  // add a marker for San Francisco
-  var city_center = L.marker(vis.mapPosition).addTo(vis.map);
-
-  // Update the visualization
-  vis.updateVis();
-};
-
-
-/*
- *  The drawing function
- */
-
-TruckMap.prototype.updateVis = function() {
-
 };

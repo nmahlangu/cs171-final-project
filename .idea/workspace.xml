@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dee4875-eb64-4906-b3b6-fcc7045f73aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/truckRoute.js" afterPath="$PROJECT_DIR$/js/truckRoute.js" />
     </list>
     <ignored path="cs171-final-project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45322582">
+            <state vertical-scroll-proportion="-3.602564">
               <caret line="307" column="29" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -37,13 +36,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="truckRoute.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="truckRoute.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/truckRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="288" column="175" selection-start-line="288" selection-start-column="175" selection-end-line="288" selection-end-column="175" />
+            <state vertical-scroll-proportion="0.5272206">
+              <caret line="265" column="34" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
               <folding>
-                <marker date="1461723010000" expanded="true" signature="6598:6609" placeholder="..." />
+                <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chloropleth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/chloropleth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="215" selection-end-column="3" />
+              <folding>
+                <marker date="1461699005000" expanded="true" signature="4938:4999" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="5057:5112" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="5164:5217" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="5442:5500" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="5558:5610" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="5662:5715" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="6063:6082" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="6370:6411" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="6656:6711" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="6789:6842" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="7175:7214" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="7459:7511" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="7589:7642" placeholder="..." />
+                <marker date="1461699005000" expanded="true" signature="8594:8606" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -88,9 +112,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/heatMap.js" />
-        <option value="$PROJECT_DIR$/js/truckRoute.js" />
         <option value="$PROJECT_DIR$/css/style2.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/truckRoute.js" />
       </list>
     </option>
   </component>
@@ -315,7 +339,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="288" column="175" selection-start-line="288" selection-start-column="175" selection-end-line="288" selection-end-column="175" />
           <folding>
-            <marker date="1461723010000" expanded="true" signature="6598:6609" placeholder="..." />
+            <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -379,16 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/truckRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="288" column="175" selection-start-line="288" selection-start-column="175" selection-end-line="288" selection-end-column="175" />
-          <folding>
-            <marker date="1461723010000" expanded="true" signature="6598:6609" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.6862745">
@@ -399,11 +413,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45322582">
+        <state vertical-scroll-proportion="-3.602564">
           <caret line="307" column="29" selection-start-line="307" selection-start-column="29" selection-end-line="307" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chloropleth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="215" selection-end-column="3" />
+          <folding>
+            <marker date="1461699005000" expanded="true" signature="4938:4999" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="5057:5112" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="5164:5217" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="5442:5500" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="5558:5610" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="5662:5715" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="6063:6082" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="6370:6411" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="6656:6711" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="6789:6842" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="7175:7214" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="7459:7511" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="7589:7642" placeholder="..." />
+            <marker date="1461699005000" expanded="true" signature="8594:8606" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/truckRoute.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5272206">
+          <caret line="265" column="34" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
+          <folding>
+            <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
           </folding>
         </state>
       </provider>
