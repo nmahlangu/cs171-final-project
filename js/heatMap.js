@@ -2,7 +2,9 @@
 /*
  *  StationMap - Object constructor function
  *  @param _parentElement   -- HTML element in which to draw the visualization
- *  @param _data            -- Array with all stations of the bike-sharing network
+ *  @param _locationData    -- Array with coordinates for each food truck
+ *  @param _restaurantData  -- Array with coordinates for each restaurant
+ *  @param _mapPosition     -- Array with coordinates of city center
  */
 
 HeatMap = function(_parentElement, _locationData, _restaurantData, _mapPosition) {
@@ -14,19 +16,13 @@ HeatMap = function(_parentElement, _locationData, _restaurantData, _mapPosition)
   this.initVis();
 };
 
-/*
- * Helper function for styling lines
- */
 
 /*
- *  Initialize station map
+ *  Initialize heat map
  */
 
 HeatMap.prototype.initVis = function() {
   var vis = this;
-
-  // console.log("HI")
-  // console.log(vis.restaurantData)
 
   // create map
   vis.map = L.map(vis.parentElement).setView(vis.mapPosition, 13);
@@ -39,6 +35,7 @@ HeatMap.prototype.initVis = function() {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>contributors'
   }).addTo(vis.map);
 
+  // add heat later
   vis.heat = L.heatLayer(vis.locationData, {
     radius: 20,
     blur: 15,
@@ -46,31 +43,14 @@ HeatMap.prototype.initVis = function() {
 
   // add event handler to dropdown
   vis.dropdown = document.getElementById("heatmap-dropdown");
-  vis.dropdown.onchange = function() {
-    vis.updateVis();
-  }
-  
-  vis.wrangleData();
-};
+  vis.dropdown.onchange = function() { vis.updateVis(); }
 
-
-/*
- *  Data wrangling
- */
-
-HeatMap.prototype.wrangleData = function() {
-  var vis = this;
-
-  // add a marker for Maxwell Dworkin
-  // var cityCenter = L.marker(vis.mapPosition).addTo(vis.map);
-
-  // Update the visualization
   vis.updateVis();
+
 };
 
-
 /*
- *  The drawing function
+ *  Update the visualization depending on dropdown value
  */
 
 HeatMap.prototype.updateVis = function() {
@@ -80,11 +60,10 @@ HeatMap.prototype.updateVis = function() {
   // get dropdown value
   var dropdownValue = $("#heatmap-dropdown").val();
 
+  // remove current layer
   vis.map.removeLayer(vis.heat);
 
-  // console.log(vis.locationData);
-  // console.log(vis.restaurantData);
-
+  // create layer for trucks or restaurants
   if (dropdownValue == "trucks") {
     vis.heat = L.heatLayer(vis.locationData, {
       radius: 20,
@@ -97,7 +76,5 @@ HeatMap.prototype.updateVis = function() {
       blur: 20,
       maxZoom: 17}).addTo(vis.map);
   }
-
-  // console.log(dropdownValue);
 
 };
