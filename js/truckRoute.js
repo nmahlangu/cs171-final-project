@@ -69,17 +69,6 @@ TruckMap.prototype.initVis = function() {
     // initialize hour to Sunday midnight
     vis.hour = 0;
 
-    // initialize brush
-    function brushed() {
-        var value = vis.brush.extent()[0];
-        if (d3.event.sourceEvent) { // not a programmatic event
-            value = vis.timeScale.invert(d3.mouse(this)[0]);
-            vis.brush.extent([value, value]);
-        }
-        vis.handle.attr("x", timeScale(value));
-        vis.handle.select('text').text(vis.dateFormat(value));
-    }
-
     // scale function for timeline
     vis.timeScale = d3.time.scale()
         .domain([new Date(2016, 4, 1), new Date(2016, 4, 8)])
@@ -103,8 +92,7 @@ TruckMap.prototype.initVis = function() {
     // defines brush
     vis.brush = d3.svg.brush()
         .x(vis.timeScale)
-        .extent([startingValue, startingValue])
-        .on("brush", brushed);
+        .extent([startingValue, startingValue]);
 
     // date format for the timeline axis
     vis.dateFormat = d3.time.format('%a %I %p');

@@ -39,10 +39,10 @@
       <file leaf-file-name="truckRoute.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/truckRoute.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5272206">
-              <caret line="265" column="34" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.1504298">
+              <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
               <folding>
-                <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
+                <marker date="1461873108000" expanded="true" signature="5971:5982" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -339,7 +339,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="288" column="175" selection-start-line="288" selection-start-column="175" selection-end-line="288" selection-end-column="175" />
           <folding>
-            <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
+            <marker date="1461873108000" expanded="true" signature="5971:5982" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -447,10 +447,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/truckRoute.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5272206">
-          <caret line="265" column="34" selection-start-line="265" selection-start-column="34" selection-end-line="265" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.1504298">
+          <caret line="74" column="53" selection-start-line="74" selection-start-column="53" selection-end-line="74" selection-end-column="53" />
           <folding>
-            <marker date="1461872397000" expanded="true" signature="6392:6403" placeholder="..." />
+            <marker date="1461873108000" expanded="true" signature="5971:5982" placeholder="..." />
           </folding>
         </state>
       </provider>
