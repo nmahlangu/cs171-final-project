@@ -240,6 +240,14 @@ Chloropleth.prototype.updateMapLegend = function() {
   vis.legend.onAdd = function(map) {
     var div = L.DomUtil.create('div', 'info legend');
 
+    var dropdownValue = $("#chloropleth-dropdown").val();
+    if (dropdownValue == "inspections") {
+      div.innerHTML += "<strong class='key-title'>Average</strong></br><strong>Inspection</strong></br><strong>Score</strong></br>";  
+    }
+    else if (dropdownValue == "violations") {
+      div.innerHTML += "<strong class='key-title'>Avg. # of</strong></br><strong>Violations</strong></br>";
+    }
+    
     var base = vis.colorScale.domain()[0];
     var diff = vis.colorScale.domain()[1] - vis.colorScale.domain()[0];
     var categories = [];
