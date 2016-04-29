@@ -55,5 +55,5 @@ Folders
 		- slide/*
 
 ### Other
-* Project website: www.TODO.com
+* Project website: http://nmahlangu.github.io/
 * Screencast: www.TODO.com
