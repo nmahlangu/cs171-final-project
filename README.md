@@ -55,8 +55,9 @@ Folders
 		- slide/*
 
 ### Other
-* Project website: http://nmahlangu.github.io/
+* Project Website: http://nmahlangu.github.io/
 * Screencast: https://www.youtube.com/watch?v=W-OIQ3Mp9Mk
+* GitHub Repo: https://github.com/nmahlangu/nmahlangu.github.io
 
 
 ### Misc Notes
