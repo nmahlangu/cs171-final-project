@@ -59,6 +59,5 @@ Folders
 * Screencast: https://www.youtube.com/watch?v=W-OIQ3Mp9Mk
 * GitHub Repo: https://github.com/nmahlangu/nmahlangu.github.io
 
-
 ### Misc Notes
 * Raw data can be found at data/restaurant_scores
